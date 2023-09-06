@@ -333,3 +333,8 @@ Bjorn-Ari-Game/UserSettings/EditorUserSettings.asset
 Bjorn-Ari-Game/Library/.DS_Store
 Bjorn-Ari-Game/Library/SourceAssetDB
 Bjorn-Ari-Game/Temp/FSTimeGet-b7668538d1f0c47878178570fadcc667
+*.bin
+Bjorn-Ari-Game/Library/SourceAssetDB
+Bjorn-Ari-Game/Library/UndoData.bin
+Bjorn-Ari-Game/Library/UndoStack.bin
+Bjorn-Ari-Game/Temp/FSTimeGet-b7668538d1f0c47878178570fadcc667
