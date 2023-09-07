@@ -18,6 +18,12 @@ public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
 
+    Ray ray;
+
+    RaycastHit hitData;
+
+    public float maxDistance = 10;
+
     #region Camera Movement Variables
 
     public Camera playerCamera;
@@ -202,6 +208,7 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+       
         #region Camera
 
         // Control camera movement
@@ -362,6 +369,8 @@ public class FirstPersonController : MonoBehaviour
         {
             HeadBob();
         }
+
+       
     }
 
     void FixedUpdate()
@@ -736,6 +745,25 @@ public class FirstPersonController : MonoBehaviour
             SerFPC.ApplyModifiedProperties();
         }
     }
+
+
+    // void FireRay()
+    // {
+    //     Ray ray = new Ray(transform.position, transform.forward);
+    //     if (Physics.Raycast(ray, 10))
+    //     { 
+    //         print("hit");
+    //     // Hit Something closer than 10 units away
+    //     }
+        // Ray ray = ScreenPointToRay(transform.position, transform.forward, Input.mousePosition);
+        // RaycastHit hitData;
+        // string tag = hitData.collider.tag;
+        // if (Physics.Raycast(ray, out hitData));
+        // {
+        //     print
+        // }
+
+    //}
 
 }
 
