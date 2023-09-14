@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638297978820000000
-    m_Hash: 3351496687
+      ticks: 638302250900000000
+    m_Hash: 3849511098
   m_LockFileStatus:
     m_FilePath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638297978840000000
-    m_Hash: 4293711310
+      ticks: 638302250910000000
+    m_Hash: 2700535902
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -112,11 +112,13 @@ m_ResolvedPackages:
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
     compatible:
     - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
     recommended: 2.0.7
     deprecated: []
   dependencies: []
@@ -179,6 +181,120 @@ m_ResolvedPackages:
     Editor Toolbar on domain reload.\n- Fixed the popup stating \"An existing checkout
     operation has locked the workspace\" when trying to check in a scene with unsaved
     changes."}'
+  assetStore:
+    productId: 
+- packageId: com.unity.feature.characters-animation@1.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0
+  source: 2
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.feature.characters-animation@1.0.0
+  assetPath: Packages/com.unity.feature.characters-animation
+  name: com.unity.feature.characters-animation
+  displayName: 3D Characters and Animation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: feature
+  description: 'Animate characters and create cutscenes with the Characters and Animation
+    feature set.
+
+
+    Build interactive character rigs and constraints to animate
+    characters and GameObjects.
+
+    Arrange tracks and clips to create gameplay
+    sequences, cutscenes, or movies.
+
+    Orchestrate, shoot, and record beautiful
+    narratives for cutscenes or movies.
+
+    Easily round-trip to your 3D modeling
+    software'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.animation.rigging
+    version: default
+  - name: com.unity.timeline
+    version: default
+  - name: com.unity.cinemachine
+    version: default
+  - name: com.unity.formats.fbx
+    version: default
+  resolvedDependencies:
+  - name: com.unity.animation.rigging
+    version: 1.2.1
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.test-framework
+    version: 1.3.7
+  - name: com.unity.ext.nunit
+    version: 2.0.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.timeline
+    version: 1.8.2
+  - name: com.unity.modules.director
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.unity.cinemachine
+    version: 2.9.5
+  - name: com.unity.formats.fbx
+    version: 5.0.0
+  - name: com.autodesk.fbx
+    version: 5.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"quickstart":"https://docs.unity3d.com/2021.2/Documentation/Manual/CharacterAnimationFeature.html"}'
   assetStore:
     productId: 
 - packageId: com.unity.feature.worldbuilding@1.0.1
@@ -637,6 +753,175 @@ m_ResolvedPackages:
     not access a setter on child control properties."}'
   assetStore:
     productId: 
+- packageId: com.unity.netcode@1.0.17
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.17
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.netcode@1.0.17
+  assetPath: Packages/com.unity.netcode
+  name: com.unity.netcode
+  displayName: Netcode for Entities
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Unity's Data Oriented Technology Stack (DOTS) multiplayer netcode
+    layer - a high level netcode system built on entities. This package provides
+    a foundation for creating networked multiplayer applications within DOTS.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.1-preview.6
+    - 0.0.2-preview.1
+    - 0.0.3-preview.2
+    - 0.0.4-preview.0
+    - 0.1.0-preview.6
+    - 0.2.0-preview.5
+    - 0.3.0-preview.3
+    - 0.4.0-preview.1
+    - 0.5.0-preview.5
+    - 0.6.0-preview.7
+    - 0.50.0-preview.29
+    - 0.50.1-preview.19
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.8
+    - 1.0.0-exp.13
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.47
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.12
+    - 1.0.15
+    - 1.0.17
+    compatible:
+    - 0.0.1-preview.6
+    - 0.0.2-preview.1
+    - 0.0.3-preview.2
+    - 0.0.4-preview.0
+    - 0.1.0-preview.6
+    - 0.2.0-preview.5
+    - 0.3.0-preview.3
+    - 0.4.0-preview.1
+    - 0.5.0-preview.5
+    - 0.6.0-preview.7
+    - 0.50.0-preview.29
+    - 0.50.1-preview.19
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.8
+    - 1.0.0-exp.13
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.47
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.12
+    - 1.0.15
+    - 1.0.17
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.transport
+    version: 2.0.1
+  - name: com.unity.entities
+    version: 1.0.16
+  - name: com.unity.logging
+    version: 1.0.16
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.transport
+    version: 2.0.1
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  - name: com.unity.entities
+    version: 1.0.16
+  - name: com.unity.serialization
+    version: 3.1.1
+  - name: com.unity.modules.assetbundle
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 3.0.2
+  - name: com.unity.test-framework
+    version: 1.3.7
+  - name: com.unity.ext.nunit
+    version: 2.0.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.scriptablebuildpipeline
+    version: 1.21.8
+  - name: com.unity.profiling.core
+    version: 1.0.2
+  - name: com.unity.logging
+    version: 1.0.16
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638302011970000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.netcode@1.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/dots.git
+    revision: 8f9a34fef643cca2b5f84470ac61c171c1831168
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 1.0.0-pre.15
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n\n* defining ENABLE_UNITY_RPC_REGISTRATION_LOGGING
+    will now log information about registered RPCs during netcode startup\n\n###
+    Changed\n\n* NetcodePacket debug log filenames changed to include date/time and
+    version information\n\n### Fixed\n\n* addressed a case where it was possible
+    for an exception to be thrown on the server if an RPC was queued for a then dropped
+    connection.\n* \"AssetDatabase.RegisterCustomDependency are restricted during
+    importing\" exception thrown by the NetCodeClientSettings, NetCodeClientServerSettings,
+    NetCodeServerSettings in their OnDisable method, when using 2023.2 or newer."}'
+  assetStore:
+    productId: 
 - packageId: com.unity.render-pipelines.universal@15.0.6
   testable: 0
   isDirectDependency: 1
@@ -723,7 +1008,7 @@ m_ResolvedPackages:
   - name: com.unity.mathematics
     version: 1.2.6
   - name: com.unity.burst
-    version: 1.8.7
+    version: 1.8.8
   - name: com.unity.render-pipelines.core
     version: 15.0.6
   - name: com.unity.ugui
@@ -3777,213 +4062,6 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-- packageId: com.unity.burst@1.8.7
-  testable: 0
-  isDirectDependency: 0
-  version: 1.8.7
-  source: 1
-  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.burst@1.8.7
-  assetPath: Packages/com.unity.burst
-  name: com.unity.burst
-  displayName: Burst
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: assets
-  description: Burst is a compiler that translates from IL/.NET bytecode to highly
-    optimized native code using LLVM.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.2.4-preview.5
-    - 0.2.4-preview.7
-    - 0.2.4-preview.11
-    - 0.2.4-preview.12
-    - 0.2.4-preview.13
-    - 0.2.4-preview.14
-    - 0.2.4-preview.15
-    - 0.2.4-preview.16
-    - 0.2.4-preview.17
-    - 0.2.4-preview.18
-    - 0.2.4-preview.19
-    - 0.2.4-preview.20
-    - 0.2.4-preview.21
-    - 0.2.4-preview.22
-    - 0.2.4-preview.23
-    - 0.2.4-preview.24
-    - 0.2.4-preview.25
-    - 0.2.4-preview.30
-    - 0.2.4-preview.31
-    - 0.2.4-preview.33
-    - 0.2.4-preview.34
-    - 0.2.4-preview.37
-    - 0.2.4-preview.41
-    - 0.2.4-preview.45
-    - 0.2.4-preview.48
-    - 0.2.4-preview.50
-    - 1.1.0-preview.2
-    - 1.1.0-preview.3
-    - 1.1.0-preview.4
-    - 1.1.1
-    - 1.1.2
-    - 1.1.3-preview.3
-    - 1.2.0-preview.1
-    - 1.2.0-preview.5
-    - 1.2.0-preview.6
-    - 1.2.0-preview.8
-    - 1.2.0-preview.9
-    - 1.2.0-preview.10
-    - 1.2.0-preview.11
-    - 1.2.0-preview.12
-    - 1.2.0
-    - 1.2.1
-    - 1.2.2
-    - 1.2.3
-    - 1.3.0-preview.1
-    - 1.3.0-preview.2
-    - 1.3.0-preview.3
-    - 1.3.0-preview.4
-    - 1.3.0-preview.5
-    - 1.3.0-preview.6
-    - 1.3.0-preview.7
-    - 1.3.0-preview.8
-    - 1.3.0-preview.9
-    - 1.3.0-preview.10
-    - 1.3.0-preview.11
-    - 1.3.0-preview.12
-    - 1.3.0-preview.13
-    - 1.3.0
-    - 1.3.1
-    - 1.3.2
-    - 1.3.3
-    - 1.3.4
-    - 1.3.5
-    - 1.3.6
-    - 1.3.7
-    - 1.3.8
-    - 1.3.9
-    - 1.4.0-pre.1
-    - 1.4.0-preview.1
-    - 1.4.0-preview.2
-    - 1.4.0-preview.3
-    - 1.4.0-preview.4
-    - 1.4.0-preview.5
-    - 1.4.1-pre.1
-    - 1.4.1-pre.2
-    - 1.4.1
-    - 1.4.2
-    - 1.4.3
-    - 1.4.4-preview.1
-    - 1.4.4-preview.2
-    - 1.4.4
-    - 1.4.5
-    - 1.4.6
-    - 1.4.7
-    - 1.4.8
-    - 1.4.9
-    - 1.4.11
-    - 1.5.0-pre.3
-    - 1.5.0-pre.4
-    - 1.5.0-pre.5
-    - 1.5.0
-    - 1.5.1
-    - 1.5.2
-    - 1.5.3
-    - 1.5.4
-    - 1.5.5
-    - 1.5.6-preview.1
-    - 1.5.6
-    - 1.6.0-pre.2
-    - 1.6.0-pre.3
-    - 1.6.0-pre.4
-    - 1.6.0
-    - 1.6.1
-    - 1.6.2
-    - 1.6.3
-    - 1.6.4
-    - 1.6.5
-    - 1.6.6
-    - 1.7.0-pre.1
-    - 1.7.0
-    - 1.7.1
-    - 1.7.2
-    - 1.7.3
-    - 1.7.4
-    - 1.8.0-pre.1
-    - 1.8.0-pre.2
-    - 1.8.0
-    - 1.8.1
-    - 1.8.2
-    - 1.8.3
-    - 1.8.4
-    - 1.8.7
-    - 1.8.8
-    compatible:
-    - 1.8.7
-    - 1.8.8
-    recommended: 1.8.8
-    deprecated: []
-  dependencies:
-  - name: com.unity.mathematics
-    version: 1.2.1
-  resolvedDependencies:
-  - name: com.unity.mathematics
-    version: 1.2.6
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638221796120000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: git@github.cds.internal.unity3d.com:unity/burst
-    revision: 47aa5e222ec0a9e94b78af0bb63021cf722ad06b
-    path: 
-  unityLifecycle:
-    version: 1.8.7
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Added\n- Add proper license attribution for MUSL
-    and SLEEF libraries.\n\n### Removed\n\n### Changed\n- Changed focus for initial
-    Burst Inspector focus to actually get the search hit in focus.\n\n### Fixed\n-
-    Fix QNX builds using the qnxInstallationPath editor build setting\n- Fixed an
-    issue causing source file handles to be left open (preventing saving in an ide,
-    if in debug scripting mode and the file is used in the burst path).\n- Fixed
-    an issue when targeting multiple cpu architectures (e.g. SSE2 & AVX2) that under
-    some circumstances would lead to code attempting to execute paths not designed
-    for that cpu.\n- Fixed an issue that caused builds to fail due to the System.Diagnostics.Tracing
-    assembly not being found\n- Fixed a warning that occurred when opening Burst
-    AOT Settings while in Play Mode\n- Fixed a hashing error that could occur when
-    an operator overload method is used as a Burst entry point\n- Fixed crash on
-    linux if debug logging was enabled.\n- Fixed \"The specified path is not of a
-    legal form (empty)\" error\n- Calls to methods with multiple `[Conditional]`
-    attributes are now kept if any one of the conditions are met\n- Fixed Burst implementation
-    of `IntPtr.GetHashCode()` being different than .Net\n- Fixed an issue that caused
-    the digits and MidpointRounding parameters of Math.Round be ignored\n\n### Known
-    Issues"}'
-  assetStore:
-    productId: 
 - packageId: com.unity.render-pipelines.core@15.0.6
   testable: 0
   isDirectDependency: 0
@@ -4357,6 +4435,534 @@ m_ResolvedPackages:
     hash: 
     revision: 
   upmReserved: 
+  assetStore:
+    productId: 
+- packageId: com.unity.transport@2.0.1
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.1
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.transport@2.0.1
+  assetPath: Packages/com.unity.transport
+  name: com.unity.transport
+  displayName: Unity Transport
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Unity network transport layer - the low-level interface for connecting
+    and sending data through a network
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.2.0-preview.4
+    - 0.2.1-preview.1
+    - 0.2.2-preview.2
+    - 0.2.3-preview.0
+    - 0.2.4-preview.0
+    - 0.3.0-preview.6
+    - 0.3.1-preview.4
+    - 0.4.0-preview.3
+    - 0.4.1-preview.1
+    - 0.5.0-preview.5
+    - 0.6.0-preview.7
+    - 0.8.0-preview.8
+    - 1.0.0-pre.2
+    - 1.0.0-pre.3
+    - 1.0.0-pre.4
+    - 1.0.0-pre.5
+    - 1.0.0-pre.6
+    - 1.0.0-pre.7
+    - 1.0.0-pre.8
+    - 1.0.0-pre.9
+    - 1.0.0-pre.10
+    - 1.0.0-pre.12
+    - 1.0.0-pre.13
+    - 1.0.0-pre.14
+    - 1.0.0-pre.15
+    - 1.0.0-pre.16
+    - 1.0.0
+    - 1.1.0
+    - 1.2.0
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.4.0
+    - 2.0.0-exp.6
+    - 2.0.0-exp.7
+    - 2.0.0-exp.8
+    - 2.0.0-pre.2
+    - 2.0.0-pre.3
+    - 2.0.0-pre.5
+    - 2.0.0-pre.6
+    - 2.0.0-pre.7
+    - 2.0.0-pre.8
+    - 2.0.1
+    - 2.0.2
+    compatible:
+    - 1.4.0
+    - 2.0.0-exp.6
+    - 2.0.0-exp.7
+    - 2.0.0-exp.8
+    - 2.0.0-pre.2
+    - 2.0.0-pre.3
+    - 2.0.0-pre.5
+    - 2.0.0-pre.6
+    - 2.0.0-pre.7
+    - 2.0.0-pre.8
+    - 2.0.1
+    - 2.0.2
+    recommended: 1.4.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.collections
+    version: 2.1.1
+  - name: com.unity.burst
+    version: 1.8.4
+  - name: com.unity.mathematics
+    version: 1.2.6
+  resolvedDependencies:
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638179514670000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.transport@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.transport.git
+    revision: f7c618013b165797b9f23a38cd9dd1c219422030
+    path: 
+  unityLifecycle:
+    version: 1.4.0
+    nextVersion: 2.0.0-pre.7
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changes\n* Updated Collections dependency to 2.1.1."}'
+  assetStore:
+    productId: 
+- packageId: com.unity.entities@1.0.16
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.16
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.entities@1.0.16
+  assetPath: Packages/com.unity.entities
+  name: com.unity.entities
+  displayName: Entities
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: The Entities package provides a modern Entity Component System (ECS)
+    implementation with a basic set of systems and components made for Unity.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.4
+    - 0.0.12-preview.5
+    - 0.0.12-preview.6
+    - 0.0.12-preview.8
+    - 0.0.12-preview.11
+    - 0.0.12-preview.12
+    - 0.0.12-preview.13
+    - 0.0.12-preview.14
+    - 0.0.12-preview.15
+    - 0.0.12-preview.16
+    - 0.0.12-preview.17
+    - 0.0.12-preview.18
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 0.0.12-preview.21
+    - 0.0.12-preview.23
+    - 0.0.12-preview.24
+    - 0.0.12-preview.26
+    - 0.0.12-preview.27
+    - 0.0.12-preview.28
+    - 0.0.12-preview.29
+    - 0.0.12-preview.30
+    - 0.0.12-preview.31
+    - 0.0.12-preview.32
+    - 0.0.12-preview.33
+    - 0.1.0-preview
+    - 0.1.1-preview
+    - 0.2.0-preview.18
+    - 0.3.0-preview.4
+    - 0.4.0-preview.10
+    - 0.5.0-preview.17
+    - 0.5.1-preview.11
+    - 0.6.0-preview.24
+    - 0.7.0-preview.19
+    - 0.8.0-preview.8
+    - 0.9.0-preview.6
+    - 0.9.1-preview.15
+    - 0.10.0-preview.6
+    - 0.11.0-preview.7
+    - 0.11.1-preview.4
+    - 0.11.2-preview.1
+    - 0.13.0-preview.24
+    - 0.14.0-preview.18
+    - 0.14.0-preview.19
+    - 0.16.0-preview.21
+    - 0.17.0-preview.41
+    - 0.17.0-preview.42
+    - 0.50.0-preview.24
+    - 0.50.1-preview.2
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.8
+    - 1.0.0-exp.12
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.47
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    compatible:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.4
+    - 0.0.12-preview.5
+    - 0.0.12-preview.6
+    - 0.0.12-preview.8
+    - 0.0.12-preview.11
+    - 0.0.12-preview.12
+    - 0.0.12-preview.13
+    - 0.0.12-preview.14
+    - 0.0.12-preview.15
+    - 0.0.12-preview.16
+    - 0.0.12-preview.17
+    - 0.0.12-preview.18
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 0.0.12-preview.21
+    - 0.0.12-preview.23
+    - 0.0.12-preview.24
+    - 0.0.12-preview.26
+    - 0.0.12-preview.27
+    - 0.0.12-preview.28
+    - 0.0.12-preview.29
+    - 0.0.12-preview.30
+    - 0.0.12-preview.31
+    - 0.0.12-preview.32
+    - 0.0.12-preview.33
+    - 0.1.0-preview
+    - 0.1.1-preview
+    - 0.2.0-preview.18
+    - 0.3.0-preview.4
+    - 0.4.0-preview.10
+    - 0.5.0-preview.17
+    - 0.5.1-preview.11
+    - 0.6.0-preview.24
+    - 0.7.0-preview.19
+    - 0.8.0-preview.8
+    - 0.9.0-preview.6
+    - 0.9.1-preview.15
+    - 0.10.0-preview.6
+    - 0.11.0-preview.7
+    - 0.11.1-preview.4
+    - 0.11.2-preview.1
+    - 0.13.0-preview.24
+    - 0.14.0-preview.18
+    - 0.14.0-preview.19
+    - 0.16.0-preview.21
+    - 0.17.0-preview.41
+    - 0.17.0-preview.42
+    - 0.50.0-preview.24
+    - 0.50.1-preview.2
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.8
+    - 1.0.0-exp.12
+    - 1.0.0-pre.15
+    - 1.0.0-pre.44
+    - 1.0.0-pre.47
+    - 1.0.0-pre.65
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.serialization
+    version: 3.1.1
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.assetbundle
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 3.0.2
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  - name: com.unity.scriptablebuildpipeline
+    version: 1.20.2
+  - name: com.unity.profiling.core
+    version: 1.0.2
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.serialization
+    version: 3.1.1
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  - name: com.unity.modules.assetbundle
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 3.0.2
+  - name: com.unity.test-framework
+    version: 1.3.7
+  - name: com.unity.ext.nunit
+    version: 2.0.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.scriptablebuildpipeline
+    version: 1.21.8
+  - name: com.unity.profiling.core
+    version: 1.0.2
+  keywords:
+  - entities
+  - dots
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638302011930000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.entities@1.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/dots.git
+    revision: 8f9a34fef643cca2b5f84470ac61c171c1831168
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 1.0.0-pre.15
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n\n* checks to see if an exclusive transaction
+    is active while scheduling a job.\n\n### Changed\n\n* Clarified in TransformHelpers
+    API documentation that matrices are expected to be affine.\n* Updated Burst dependency
+    to version 1.8.8\n\n### Removed\n\n* Alignment attribute is removed when displaying
+    component attributes in Inspector window.\n* Changelog entry for * Added `EntityCommandBuffer.MoveComponent<T>(Entity
+    src, Entity dst)` this will be added in an upcoming minor version.\n\n### Fixed\n\n*
+    Companion objects appearing in the GameObject hierarchy for a frame\n* `SystemAPI.Query<EnabledRefRW<MyEnabledComponent>>()`
+    can now be used with `.WithNone<MyEnabledComponent>()`, `.WithAny<MyEnabledComponent>()`
+    and `.WithDisabled<MyEnabledComponent>()`.\n* \"AssetDatabase.RegisterCustomDependency
+    are restricted during importing\" exception thrown by the EntityClientSetting
+    in the OnDisable method, when using 2023.2 or newer.\n* The entities journaling
+    window will no longer show an error when a system handle cannot be resolved;
+    this is not an error and simply means that no system was executing when that
+    event was recorded.\n* Search window for Systems now shows results from all the
+    worlds instead of default ones.\n* Special handling for prefab entity instantiated
+    from prefab asset at runtime.\n* Entities Hierarchy: fix an issue that can happen
+    when copying scene entities from different worlds.\n* Entities Hierarchy: Fix
+    memory leak in hierarchy backend.\n* Entities Hierarchy: Only remove subscene
+    nodes when they are actually not used anymore.\n* Fixed `isReadOnly` being ignored
+    in `EntityManager.GetBuffer`.\n* Save unsaved opened scenes in the Editor before
+    building a player. (fix issue: Error building Player: InvalidOperationException:
+    ContentCatalogBuildUtility.BuildContentArchives failed with status ''UnsavedChanges'')\n*
+    Fixed memory leak in some cases when an `EntityCommandBuffer` containing `DynamicBuffer`
+    commands was disposed before it was played back.\n* `World.AddSystemManaged<T>(T
+    system)` no longer throws an exception if the system type `T` is not registered.
+    Instead, it registers the type just in time. This matches the existing behavior
+    of `World.CreateSystemManaged()`.\n* Fixed a hash mismatch on DependOnParentTransformHierarchy\n*
+    Users can now specify duplicate components in the same `IJobEntity.Execute()`
+    method, insofar as exactly one of them is wrapped in `EnabledRef<T>`.\n* You
+    can now use SystemAPI.GetBufferTypeHandle and SystemAPI.GetSharedComponentTypeHandle
+    with unspecified types coming from systems. Like a `MySystem<TUnspecifiedType>`
+    using SystemAPI.GetBufferTypeHandle<TUnspecifiedType>."}'
+  assetStore:
+    productId: 
+- packageId: com.unity.logging@1.0.16
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.16
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.logging@1.0.16
+  assetPath: Packages/com.unity.logging
+  name: com.unity.logging
+  displayName: Unity Logging
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: The Logging package provides interfaces for creating and processing
+    runtime events and logging output.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.50.0-preview.13
+    - 0.50.0-preview.32
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.6
+    - 1.0.0-exp.7
+    - 1.0.0-pre.11
+    - 1.0.0-pre.21
+    - 1.0.0-pre.37
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    compatible:
+    - 0.50.0-preview.13
+    - 0.50.0-preview.32
+    - 0.51.0-preview.32
+    - 0.51.1-preview.21
+    - 1.0.0-exp.6
+    - 1.0.0-exp.7
+    - 1.0.0-pre.11
+    - 1.0.0-pre.21
+    - 1.0.0-pre.37
+    - 1.0.8
+    - 1.0.10
+    - 1.0.11
+    - 1.0.14
+    - 1.0.16
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.collections
+    version: 2.1.4
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  keywords:
+  - dots
+  - logging
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638302011950000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.logging@1.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/dots.git
+    revision: 8f9a34fef643cca2b5f84470ac61c171c1831168
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 1.0.0-pre.11
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changed\n\n* Updated Burst dependency to version
+    1.8.8\n\n\n### Fixed\n\n* Fixed an issue where using a string that requires more
+    than 2 bytes per character when encoded in UTF-8 in a formatted log would result
+    in either an exception being thrown or the editor hanging, depending on the sync
+    mode."}'
   assetStore:
     productId: 
 - packageId: com.unity.probuilder@5.0.7
@@ -4833,6 +5439,286 @@ m_ResolvedPackages:
     properties in example code\n\n## Fixed:\n- Memory leak on CondensedSlider"}'
   assetStore:
     productId: 
+- packageId: com.unity.animation.rigging@1.2.1
+  testable: 0
+  isDirectDependency: 0
+  version: 1.2.1
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.animation.rigging@1.2.1
+  assetPath: Packages/com.unity.animation.rigging
+  name: com.unity.animation.rigging
+  displayName: Animation Rigging
+  author:
+    name: 
+    email: 
+    url: 
+  category: Animation
+  type: asset
+  description: Animation Rigging toolkit using Unity's Animation C# Jobs
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.2-preview
+    - 0.1.4-preview
+    - 0.2.1-preview
+    - 0.2.2-preview
+    - 0.2.3-preview
+    - 0.2.5-preview
+    - 0.2.6-preview
+    - 0.2.7-preview
+    - 0.3.2-preview
+    - 0.3.3-preview
+    - 0.3.4-preview
+    - 1.0.2
+    - 1.0.3
+    - 1.1.0
+    - 1.1.1
+    - 1.2.0
+    - 1.2.1
+    - 1.3.0
+    compatible:
+    - 1.2.1
+    - 1.3.0
+    recommended: 1.2.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.4.1
+  - name: com.unity.test-framework
+    version: 1.1.24
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.test-framework
+    version: 1.3.7
+  - name: com.unity.ext.nunit
+    version: 2.0.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - Animation
+  - Rigging
+  - Constraints
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638091318490000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.animation.rigging@1.2/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.animation.rigging.git
+    revision: 92e94bb1e4f136ae16b8208cad0918863e16799f
+    path: 
+  unityLifecycle:
+    version: 1.2.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"- Fixed crash when calling `RigBuilder.Build` by preventing
+    rebuilding the PlayableGraph when in a preview context (case UUM-8599)."}'
+  assetStore:
+    productId: 
+- packageId: com.unity.cinemachine@2.9.5
+  testable: 0
+  isDirectDependency: 0
+  version: 2.9.5
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.cinemachine@2.9.5
+  assetPath: Packages/com.unity.cinemachine
+  name: com.unity.cinemachine
+  displayName: Cinemachine
+  author:
+    name: 
+    email: 
+    url: 
+  category: cinematography
+  type: asset
+  description: "Smart camera tools for passionate creators. \n\nNew starting from
+    2.7.1: Are you looking for the Cinemachine menu? It has moved to the GameObject
+    menu.\n\nIMPORTANT NOTE: If you are upgrading from the legacy Asset Store version
+    of Cinemachine, delete the Cinemachine asset from your project BEFORE installing
+    this version from the Package Manager."
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 2.1.11-beta.1
+    - 2.1.12
+    - 2.1.13
+    - 2.2.0
+    - 2.2.7
+    - 2.2.8
+    - 2.2.9
+    - 2.2.10-preview.3
+    - 2.2.10-preview.4
+    - 2.3.1
+    - 2.3.3
+    - 2.3.4
+    - 2.3.5-preview.3
+    - 2.4.0-preview.3
+    - 2.4.0-preview.4
+    - 2.4.0-preview.6
+    - 2.4.0-preview.7
+    - 2.4.0-preview.8
+    - 2.4.0-preview.9
+    - 2.4.0-preview.10
+    - 2.4.0
+    - 2.5.0
+    - 2.6.0-preview.2
+    - 2.6.0-preview.3
+    - 2.6.0-preview.5
+    - 2.6.0-preview.8
+    - 2.6.0
+    - 2.6.1-preview.6
+    - 2.6.1
+    - 2.6.2-preview.1
+    - 2.6.2
+    - 2.6.3-preview.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    - 2.6.9
+    - 2.6.10
+    - 2.6.11
+    - 2.6.14
+    - 2.6.15
+    - 2.6.17
+    - 2.7.1
+    - 2.7.2
+    - 2.7.3
+    - 2.7.4
+    - 2.7.5
+    - 2.7.8
+    - 2.7.9
+    - 2.8.0-exp.1
+    - 2.8.0-exp.2
+    - 2.8.0-pre.1
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    - 2.8.6
+    - 2.8.9
+    - 2.9.0-pre.1
+    - 2.9.0-pre.6
+    - 2.9.1
+    - 2.9.2
+    - 2.9.4
+    - 2.9.5
+    - 2.9.7
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    compatible:
+    - 2.9.5
+    - 2.9.7
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    recommended: 2.9.7
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.1.31
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.3.7
+  - name: com.unity.ext.nunit
+    version: 2.0.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - camera
+  - follow
+  - rig
+  - fps
+  - cinematography
+  - aim
+  - orbit
+  - cutscene
+  - cinematic
+  - collision
+  - freelook
+  - cinemachine
+  - compose
+  - composition
+  - dolly
+  - track
+  - clearshot
+  - noise
+  - framing
+  - handheld
+  - lens
+  - impulse
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638102365180000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
+    revision: 4b4405b9505ecfa1cb2d2b03df8f3309c12f3b0d
+    path: 
+  unityLifecycle:
+    version: 2.9.5
+    nextVersion: 3.0.0-pre.3
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"- Unity 2022.2 and up: FocusDistance added to lens
+    settings and is pushed to the camera.\n- Optimized path gizmo drawing.  Now 3-5
+    times faster.\n- TargetGroup now ignores members whose gameObjects are inactive.\n-
+    Bugfix: CinemachinePathBase search radius fixed for not looped paths.\n- Regression
+    fix: POV was not handling ReferenceUp correctly\n- Bugfix: priority ordering
+    was wrong when the difference between any priority values were smaller than integer
+    min or bigger than integer max values.\n- Bugfix: Extensions were not respecting
+    execution order on domain reload."}'
+  assetStore:
+    productId: 
 - packageId: com.unity.searcher@4.9.2
   testable: 0
   isDirectDependency: 0
@@ -4901,6 +5787,935 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 4.9.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+- packageId: com.unity.burst@1.8.8
+  testable: 0
+  isDirectDependency: 0
+  version: 1.8.8
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.burst@1.8.8
+  assetPath: Packages/com.unity.burst
+  name: com.unity.burst
+  displayName: Burst
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Burst is a compiler that translates from IL/.NET bytecode to highly
+    optimized native code using LLVM.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.2.4-preview.5
+    - 0.2.4-preview.7
+    - 0.2.4-preview.11
+    - 0.2.4-preview.12
+    - 0.2.4-preview.13
+    - 0.2.4-preview.14
+    - 0.2.4-preview.15
+    - 0.2.4-preview.16
+    - 0.2.4-preview.17
+    - 0.2.4-preview.18
+    - 0.2.4-preview.19
+    - 0.2.4-preview.20
+    - 0.2.4-preview.21
+    - 0.2.4-preview.22
+    - 0.2.4-preview.23
+    - 0.2.4-preview.24
+    - 0.2.4-preview.25
+    - 0.2.4-preview.30
+    - 0.2.4-preview.31
+    - 0.2.4-preview.33
+    - 0.2.4-preview.34
+    - 0.2.4-preview.37
+    - 0.2.4-preview.41
+    - 0.2.4-preview.45
+    - 0.2.4-preview.48
+    - 0.2.4-preview.50
+    - 1.1.0-preview.2
+    - 1.1.0-preview.3
+    - 1.1.0-preview.4
+    - 1.1.1
+    - 1.1.2
+    - 1.1.3-preview.3
+    - 1.2.0-preview.1
+    - 1.2.0-preview.5
+    - 1.2.0-preview.6
+    - 1.2.0-preview.8
+    - 1.2.0-preview.9
+    - 1.2.0-preview.10
+    - 1.2.0-preview.11
+    - 1.2.0-preview.12
+    - 1.2.0
+    - 1.2.1
+    - 1.2.2
+    - 1.2.3
+    - 1.3.0-preview.1
+    - 1.3.0-preview.2
+    - 1.3.0-preview.3
+    - 1.3.0-preview.4
+    - 1.3.0-preview.5
+    - 1.3.0-preview.6
+    - 1.3.0-preview.7
+    - 1.3.0-preview.8
+    - 1.3.0-preview.9
+    - 1.3.0-preview.10
+    - 1.3.0-preview.11
+    - 1.3.0-preview.12
+    - 1.3.0-preview.13
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.6
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
+    - 1.4.0-pre.1
+    - 1.4.0-preview.1
+    - 1.4.0-preview.2
+    - 1.4.0-preview.3
+    - 1.4.0-preview.4
+    - 1.4.0-preview.5
+    - 1.4.1-pre.1
+    - 1.4.1-pre.2
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4-preview.1
+    - 1.4.4-preview.2
+    - 1.4.4
+    - 1.4.5
+    - 1.4.6
+    - 1.4.7
+    - 1.4.8
+    - 1.4.9
+    - 1.4.11
+    - 1.5.0-pre.3
+    - 1.5.0-pre.4
+    - 1.5.0-pre.5
+    - 1.5.0
+    - 1.5.1
+    - 1.5.2
+    - 1.5.3
+    - 1.5.4
+    - 1.5.5
+    - 1.5.6-preview.1
+    - 1.5.6
+    - 1.6.0-pre.2
+    - 1.6.0-pre.3
+    - 1.6.0-pre.4
+    - 1.6.0
+    - 1.6.1
+    - 1.6.2
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+    - 1.6.6
+    - 1.7.0-pre.1
+    - 1.7.0
+    - 1.7.1
+    - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.8.0-pre.1
+    - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.7
+    - 1.8.8
+    compatible:
+    - 1.8.7
+    - 1.8.8
+    recommended: 1.8.8
+    deprecated: []
+  dependencies:
+  - name: com.unity.mathematics
+    version: 1.2.1
+  resolvedDependencies:
+  - name: com.unity.mathematics
+    version: 1.2.6
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638271934420000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: git@github.cds.internal.unity3d.com:unity/burst
+    revision: 7673d9a736112fc9d58f32024c19150c2fa6d8ea
+    path: 
+  unityLifecycle:
+    version: 1.8.7
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n- Fixed error when trying to use direct
+    call to a nested protected class\n- Fixed that converting a negated unsigned
+    type to a float would produce a mismatching value in Burst versus .Net/Mono\n-
+    Fixed that the Burst Inspector handled negation of unsigned types differently
+    than .Net for static readonly fields or static constructors\n- Fixed Burst sometimes
+    returning wrong value for static readonly fields or static constructors.\n- Fixed
+    a possible source of invalid alignment, avx2 storing to stack was given a slot
+    with the wrong alignment.\n- Fixed `System.NotImplementedException: Unimplemented
+    Instruction Extension Tail_` error when the code contained tail-calls\n- Fixed
+    wrong alignment for v128 when doing an indirect access.\n- Fix compiler crash
+    when compiling different assemblies that define methods or types with the exact
+    same name and namespace\n- Fixed using Armv9 target in the Burst Inspector not
+    formatting the assembly.\n- Fixed that jobs wouldn''t be Burst compiled for player
+    builds with high stripping\n- Fixed burst not being able to find external function
+    leading to crashing the Editor\n- Prevented Burst emitting errors even when Burst
+    was disabled via the `--burst-disable-compilation` command line option\n- Under
+    some conditions (if the error in compilation occurred in a location that didn''t
+    have valid debug information), building a player might not generate any files,
+    and not display any errors.\n- Fixed `uint` to `float` conversion edge-case\n-
+    Fixed a compile-time performance regression in 1.8.7 that could result in slower
+    Burst compilation and increased memory usage during compilation\n\n### Added\n-
+    Added support for default interface methods\n- Added ability to support hashing
+    against different target frameworks.\n- Added support for string interpolation
+    in exception messages\n- Add support for `Math.Clamp` (this API is available
+    when Api Compatibility Level is set to .NET Standard 2.1)\n\n### Removed\n\n###
+    Changed\n- Direct call is now correctly disabled for methods that are decorated
+    with both `[BurstCompile]` and `[UnmanagedCallersOnly]` attributes (such methods
+    shouldn''t be called directly from managed code)\n\n### Known Issues"}'
+  assetStore:
+    productId: 
+- packageId: com.unity.collections@2.1.4
+  testable: 0
+  isDirectDependency: 0
+  version: 2.1.4
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.collections@2.1.4
+  assetPath: Packages/com.unity.collections
+  name: com.unity.collections
+  displayName: Collections
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: A C# collections library providing data structures that can be used
+    in jobs, and optimized by Burst compiler.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.9-preview.1
+    - 0.0.9-preview.2
+    - 0.0.9-preview.3
+    - 0.0.9-preview.4
+    - 0.0.9-preview.5
+    - 0.0.9-preview.6
+    - 0.0.9-preview.7
+    - 0.0.9-preview.8
+    - 0.0.9-preview.9
+    - 0.0.9-preview.10
+    - 0.0.9-preview.11
+    - 0.0.9-preview.12
+    - 0.0.9-preview.13
+    - 0.0.9-preview.14
+    - 0.0.9-preview.15
+    - 0.0.9-preview.16
+    - 0.0.9-preview.17
+    - 0.0.9-preview.18
+    - 0.0.9-preview.19
+    - 0.0.9-preview.20
+    - 0.1.0-preview
+    - 0.1.1-preview
+    - 0.2.0-preview.13
+    - 0.3.0-preview.0
+    - 0.4.0-preview.6
+    - 0.5.0-preview.9
+    - 0.5.1-preview.11
+    - 0.5.2-preview.8
+    - 0.6.0-preview.9
+    - 0.7.0-preview.2
+    - 0.7.1-preview.3
+    - 0.8.0-preview.5
+    - 0.9.0-preview.5
+    - 0.9.0-preview.6
+    - 0.11.0-preview.17
+    - 0.12.0-preview.13
+    - 0.14.0-preview.16
+    - 0.15.0-preview.21
+    - 0.17.0-preview.18
+    - 1.0.0-pre.3
+    - 1.0.0-pre.5
+    - 1.0.0-pre.6
+    - 1.1.0
+    - 1.2.3-pre.1
+    - 1.2.3
+    - 1.2.4
+    - 1.3.1
+    - 1.4.0
+    - 1.5.1
+    - 2.1.0-exp.4
+    - 2.1.0-pre.2
+    - 2.1.0-pre.6
+    - 2.1.0-pre.11
+    - 2.1.0-pre.18
+    - 2.1.1
+    - 2.1.4
+    - 2.2.0
+    compatible:
+    - 1.2.4
+    - 1.3.1
+    - 1.4.0
+    - 1.5.1
+    - 2.1.0-exp.4
+    - 2.1.0-pre.2
+    - 2.1.0-pre.6
+    - 2.1.0-pre.11
+    - 2.1.0-pre.18
+    - 2.1.1
+    - 2.1.4
+    - 2.2.0
+    recommended: 1.2.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.4
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  keywords:
+  - dots
+  - collections
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638194181200000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collections@2.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/dots.git
+    revision: 70c2a66d8670be047d7b9c6d7057a8b71b7303fb
+    path: 
+  unityLifecycle:
+    version: 1.2.4
+    nextVersion: 2.1.0-pre.6
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changed\n* Updated test-framework to 1.1.33\n\n###
+    Removed\n\n* Dependency on com.unity.test-framework.performance"}'
+  assetStore:
+    productId: 
+- packageId: com.unity.serialization@3.1.1
+  testable: 0
+  isDirectDependency: 0
+  version: 3.1.1
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.serialization@3.1.1
+  assetPath: Packages/com.unity.serialization
+  name: com.unity.serialization
+  displayName: Serialization
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Use Unity's Serialization to serialize and deserialize from/to JSON
+    and Binary formats.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.2.1-preview
+    - 0.3.0-preview
+    - 0.3.1-preview
+    - 0.4.0-preview
+    - 0.4.1-preview
+    - 0.5.0-preview
+    - 0.5.1-preview
+    - 0.6.0-preview
+    - 0.6.1-preview
+    - 0.6.2-preview
+    - 0.6.3-preview
+    - 0.6.4-preview
+    - 1.0.0-preview.5
+    - 1.1.0-preview
+    - 1.1.1-preview
+    - 1.2.0-preview
+    - 1.3.0-preview
+    - 1.3.1-preview
+    - 1.4.3-preview
+    - 1.5.0-preview
+    - 1.6.0-preview
+    - 1.6.1-preview
+    - 1.6.2-preview
+    - 1.7.0-preview.1
+    - 1.7.1-preview
+    - 1.7.3-preview
+    - 1.7.4-preview
+    - 1.7.5-preview
+    - 1.8.2-preview
+    - 1.8.3-preview
+    - 2.0.0-exp.11
+    - 2.0.0-exp.13
+    - 2.1.0-exp.1
+    - 2.1.1-exp.1
+    - 2.1.2-exp.1
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.0-pre.3
+    - 3.1.1
+    compatible:
+    - 2.0.0-exp.11
+    - 2.0.0-exp.13
+    - 2.1.0-exp.1
+    - 2.1.1-exp.1
+    - 2.1.2-exp.1
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.0-pre.3
+    - 3.1.1
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.burst
+    version: 1.7.2
+  resolvedDependencies:
+  - name: com.unity.collections
+    version: 2.1.4
+  - name: com.unity.burst
+    version: 1.8.8
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  keywords:
+  - serialization
+  - json
+  - binary
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638194181240000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.serialization@3.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.properties.git
+    revision: 090f848dff6515cf21787143f17c107644263fe9
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changed\n* Updated `com.unity.collections` to version
+    `2.1.4`."}'
+  assetStore:
+    productId: 
+- packageId: com.unity.test-framework.performance@3.0.2
+  testable: 0
+  isDirectDependency: 0
+  version: 3.0.2
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.test-framework.performance@3.0.2
+  assetPath: Packages/com.unity.test-framework.performance
+  name: com.unity.test-framework.performance
+  displayName: Performance testing API
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Extension to the Unity Test framework package. Adds performance testing
+    capabilities and collects configuration metadata.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.27-preview
+    - 0.1.29-preview
+    - 0.1.31-preview
+    - 0.1.33-preview
+    - 0.1.34-preview
+    - 0.1.36-preview
+    - 0.1.37-preview
+    - 0.1.39-preview
+    - 0.1.40-preview
+    - 0.1.41-preview
+    - 0.1.42-preview
+    - 0.1.44-preview
+    - 0.1.45-preview
+    - 0.1.47-preview
+    - 0.1.48-preview
+    - 0.1.49-preview
+    - 0.1.50-preview
+    - 1.0.4-preview
+    - 1.0.6-preview
+    - 1.0.9-preview
+    - 1.1.2-preview
+    - 1.2.0-preview
+    - 1.2.1-preview
+    - 1.2.3-preview
+    - 1.2.5-preview
+    - 1.2.6-preview
+    - 1.3.0-preview
+    - 1.3.1-preview
+    - 1.3.2-preview
+    - 1.3.3-preview
+    - 2.0.1-preview
+    - 2.0.2-preview
+    - 2.0.3-preview
+    - 2.0.6-preview
+    - 2.0.7-preview
+    - 2.0.8-preview
+    - 2.0.9-preview
+    - 2.1.0-preview
+    - 2.2.0-preview
+    - 2.3.1-preview
+    - 2.4.1-preview
+    - 2.5.1-preview
+    - 2.6.0-preview
+    - 2.7.0-preview
+    - 2.8.0-preview
+    - 2.8.1-preview
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.1
+    - 3.0.2
+    - 3.0.3
+    compatible:
+    - 1.3.3-preview
+    - 2.0.1-preview
+    - 2.0.2-preview
+    - 2.0.3-preview
+    - 2.0.6-preview
+    - 2.0.7-preview
+    - 2.0.8-preview
+    - 2.0.9-preview
+    - 2.1.0-preview
+    - 2.2.0-preview
+    - 2.3.1-preview
+    - 2.4.1-preview
+    - 2.5.1-preview
+    - 2.6.0-preview
+    - 2.7.0-preview
+    - 2.8.0-preview
+    - 2.8.1-preview
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.1
+    - 3.0.2
+    - 3.0.3
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.1.31
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.3.7
+  - name: com.unity.ext.nunit
+    version: 2.0.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - performance
+  - test
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638247729970000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework.performance@3.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.test-framework.performance.git
+    revision: 1b5b8963c496694439bad232d2abe0de1848fb71
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changed\n- Added additional InternalsVisibleTo
+    attribute for internal test assembly"}'
+  assetStore:
+    productId: 
+- packageId: com.unity.nuget.mono-cecil@1.11.4
+  testable: 0
+  isDirectDependency: 0
+  version: 1.11.4
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4
+  assetPath: Packages/com.unity.nuget.mono-cecil
+  name: com.unity.nuget.mono-cecil
+  displayName: Mono Cecil
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
+
+
+    This
+    package is intended for internal Unity use only. Most Unity users will be better
+    suite using the existing community tooling.
+
+    To avoid assembly clashes, please
+    use this package if you intend to use Mono.Cecil.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    - 1.10.2
+    - 1.11.4
+    compatible:
+    - 1.11.4
+    recommended: 1.11.4
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637852971930000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
+    revision: d0133ce672d724694b56bfd20672acf6f8737fec
+    path: 
+  unityLifecycle:
+    version: 1.11.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+- packageId: com.unity.scriptablebuildpipeline@1.21.8
+  testable: 0
+  isDirectDependency: 0
+  version: 1.21.8
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.scriptablebuildpipeline@1.21.8
+  assetPath: Packages/com.unity.scriptablebuildpipeline
+  name: com.unity.scriptablebuildpipeline
+  displayName: Scriptable Build Pipeline
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: The Scriptable Build Pipeline moves the asset bundle build pipeline
+    to C#.  Use the pre-defined build flows, or create your own using the divided
+    up APIs.  This system improves build time, fixes incremental build, and provides
+    greater flexibility.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.5-preview
+    - 0.0.6-preview
+    - 0.0.8-preview
+    - 0.0.9-preview
+    - 0.0.10-preview
+    - 0.0.14-preview
+    - 0.0.15-preview
+    - 0.1.0-preview
+    - 0.2.0-preview
+    - 1.0.1-preview
+    - 1.1.0-preview
+    - 1.1.1-preview
+    - 1.2.1-preview
+    - 1.3.5-preview
+    - 1.4.1-preview
+    - 1.5.0-preview
+    - 1.5.1
+    - 1.5.2
+    - 1.5.4
+    - 1.5.6
+    - 1.5.10
+    - 1.6.3-preview
+    - 1.6.4-preview
+    - 1.6.5-preview
+    - 1.7.2
+    - 1.7.3
+    - 1.8.2
+    - 1.8.4
+    - 1.8.6
+    - 1.9.0
+    - 1.10.0
+    - 1.11.1
+    - 1.11.2
+    - 1.12.0
+    - 1.13.1
+    - 1.14.0
+    - 1.14.1
+    - 1.15.1
+    - 1.15.2
+    - 1.16.1
+    - 1.17.0
+    - 1.18.0
+    - 1.19.0
+    - 1.19.1
+    - 1.19.2
+    - 1.19.3
+    - 1.19.4
+    - 1.19.5
+    - 1.19.6
+    - 1.20.1
+    - 1.20.2
+    - 1.21.0
+    - 1.21.1
+    - 1.21.2
+    - 1.21.3
+    - 1.21.5
+    - 1.21.7
+    - 1.21.8
+    - 1.21.9
+    compatible:
+    - 1.21.8
+    - 1.21.9
+    recommended: 1.21.9
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - build
+  - bundle
+  - bundles
+  - assetbundles
+  - cache
+  - server
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638271645570000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.scriptablebuildpipeline@1.21/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/Addressables.git
+    revision: b6e4f321768265894baab72ca85cb8b8877ffbd4
+    path: 
+  unityLifecycle:
+    version: 1.21.8
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"- Removed Cache ServerV1 support\n- Fix issue where
+    source textures aren''t stripped when assets reference explicit packed sprites.\n-
+    Fix CalculateSceneDependencyData given changed sprite atlas"}'
+  assetStore:
+    productId: 
+- packageId: com.unity.profiling.core@1.0.2
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.2
+  source: 1
+  resolvedPath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.profiling.core@1.0.2
+  assetPath: Packages/com.unity.profiling.core
+  name: com.unity.profiling.core
+  displayName: Unity Profiling Core API
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: The Unity Profiling Core package provides an API for code instrumentation
+    markup, and for profiling statistic collection.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.1
+    - 0.2.0-preview.1
+    - 0.2.1-preview.1
+    - 1.0.0-pre.1
+    - 1.0.0
+    - 1.0.2
+    compatible:
+    - 1.0.2
+    recommended: 1.0.2
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - profiler
+  - profiling
+  - api
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637828752310000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/profiler.git
+    revision: 2189ba14439d76a4083f59fae87163b4bdfd49c2
+    path: 
+  unityLifecycle:
+    version: 1.0.2
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
