@@ -4,18 +4,37 @@ using UnityEngine;
 
 public class AnimationPlayerScript : MonoBehaviour
 {
-    private Animator anim;
+    private Animator animator;
     private CharacterController controller;
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>(); 
-        controller = GetComponent<CharacterController> ();
+       animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        bool isRunning = animator.GetBool("isRunning");
+        bool runPressed = Input.GetKey("left shift");
+        bool isWalking = animator.GetBool("isWalking");
+        bool forwardPressed = Input.GetKey("w");
+        if(isWalking && forwardPressed)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        if(isWalking && !forwardPressed)
+        {
+            animator.SetBool("isWalking", false);
+        }
+
+        if(!isRunning && (forwardPressed && runPressed))
+        {
+            animator.SetBool("isRunning", true);
+        }
+        if(!isRunning && (!forwardPressed || !runPressed))
+        {
+            animator.SetBool("isRunning", false);
+        }
     }
 }
