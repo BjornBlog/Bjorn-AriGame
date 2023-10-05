@@ -354,6 +354,8 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Autodesk.Fbx.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/com.unity.cinemachine.editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/ConeMeshAssembly.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/ConeMeshEditorAssembly.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/PPv2URPConverters.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/sc.terrain.painter.editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/sc.terrain.painter.runtime.ref.dll"

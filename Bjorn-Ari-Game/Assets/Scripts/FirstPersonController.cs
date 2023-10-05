@@ -16,6 +16,9 @@ using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
+    public bool isLightOn = false;
+    private LightScript Flashlight;
+    private GameObject HandHeldLight;
     private Rigidbody rb;
 
     Ray ray;
@@ -136,7 +139,26 @@ public class FirstPersonController : MonoBehaviour
     private float timer = 0;
 
     #endregion
+    public int noise(){
+        if((isWalking && isSprinting) || !isGrounded)
+        {
+            return 1;
+        }
+        else if(isWalking && isCrouched)
+        {
+            return 3;
+        }
+        else if(isWalking)
+        {
+            return 2;
+        }
+        else
+        {
+            return 0;
+        }
 
+    }
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -157,6 +179,8 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
+        HandHeldLight = GameObject.FindGameObjectWithTag ("FlashlightBulb");
+        Flashlight = HandHeldLight.GetComponent<LightScript>();
         if(lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -208,7 +232,19 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
-       
+        if(Input.GetMouseButtonDown(1))
+        {
+            if(!isLightOn)
+            {
+                isLightOn = Flashlight.EnableLight();
+                print("Flashlight On");
+            }
+            else if(isLightOn)
+            {
+                isLightOn = Flashlight.DisableLight();
+                print("Flashlight Off");
+            }
+        }
         #region Camera
 
         // Control camera movement

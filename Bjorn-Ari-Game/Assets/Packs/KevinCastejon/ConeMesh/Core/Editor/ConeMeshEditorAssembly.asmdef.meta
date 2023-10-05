@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 95ce7587b9336c447a75a7349dd347eb
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 229842
+  packageName: Cone Mesh
+  packageVersion: 1.0
+  assetPath: Assets/KevinCastejon/ConeMesh/Core/Editor/ConeMeshEditorAssembly.asmdef
+  uploadId: 549099

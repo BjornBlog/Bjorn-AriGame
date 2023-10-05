@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 58ef1c47bd3a93a408c2cd65952a30fa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 229842
+  packageName: Cone Mesh
+  packageVersion: 1.0
+  assetPath: Assets/KevinCastejon/ConeMesh/Core/ConeNamespaceExporter.cs
+  uploadId: 549099

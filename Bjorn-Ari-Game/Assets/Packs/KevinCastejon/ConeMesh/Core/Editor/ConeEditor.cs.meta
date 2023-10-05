@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 567af5490f3f7c745a71ce0d3c6aa817
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 229842
+  packageName: Cone Mesh
+  packageVersion: 1.0
+  assetPath: Assets/KevinCastejon/ConeMesh/Core/Editor/ConeEditor.cs
+  uploadId: 549099
