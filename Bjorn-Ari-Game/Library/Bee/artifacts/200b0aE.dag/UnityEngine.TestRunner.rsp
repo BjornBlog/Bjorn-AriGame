@@ -336,7 +336,6 @@
 -r:"Library/PackageCache/com.unity.ext.nunit@2.0.3/net40/unity-custom/nunit.framework.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2023.1.10f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2023.1.10f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
--analyzer:"Library/PackageCache/com.unity.transport@2.0.1/Analyzers/Unity.Transport.Analyzers.dll"
 "Library/PackageCache/com.unity.test-framework@1.3.7/UnityEngine.TestRunner/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.test-framework@1.3.7/UnityEngine.TestRunner/Assertions/AllocatingGCMemoryConstraint.cs"
 "Library/PackageCache/com.unity.test-framework@1.3.7/UnityEngine.TestRunner/Assertions/ConstraintsExtensions.cs"

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.AI; 
 
 public class AI : MonoBehaviour
@@ -25,11 +26,26 @@ public class AI : MonoBehaviour
         player1 = GameObject.FindGameObjectWithTag ("Player");
         playerScript = player1.GetComponent<FirstPersonController>();
 
+=======
+using UnityEngine.AI;
+
+public class AI : MonoBehaviour
+{
+
+
+    public bool playerFound = false;
+    private NavMeshAgent[] navAgents;
+
+    private NavMeshAgent agent;
+    void Start()
+    {
+>>>>>>> sub-branch-3
         agent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
+<<<<<<< HEAD
         //int layerMask = 1 << 8;
         Vector3 p1 = transform.position;
         Vector3 delta = enemy.transform.position - player1.transform.position;
@@ -83,10 +99,25 @@ public class AI : MonoBehaviour
                 }
             }
         }
+=======
+        RaycastHit hit;
+
+        Vector3 p1 = transform.position;
+        float distanceToObstacle = 0;
+
+        // Cast a sphere wrapping character controller 10 meters forward
+        // to see if it is about to hit anything.
+        if (Physics.SphereCast(p1, 1, transform.forward, out hit, 10))
+        {
+            distanceToObstacle = hit.distance;
+        }
+        
+>>>>>>> sub-branch-3
         if(playerFound)
         {
             agent.destination = GameObject.FindWithTag("Player").transform.position;
         }
+<<<<<<< HEAD
         else
         {
             //Patrol
@@ -109,5 +140,8 @@ public class AI : MonoBehaviour
         {
             playerSeen = false;
         }
+=======
+
+>>>>>>> sub-branch-3
     }
 }
