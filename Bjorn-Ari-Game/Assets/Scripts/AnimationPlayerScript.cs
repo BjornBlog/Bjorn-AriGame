@@ -22,15 +22,9 @@ public class AnimationPlayerScript : MonoBehaviour
         bool isJumping = animator.GetBool("isJumping");
         bool upPressed = Input.GetKey("space");
         bool isCrouching = animator.GetBool("isCrouching");
-<<<<<<< HEAD
-        bool downPressed = Input.GetKey(KeyCode.LeftControl);
-        bool isCwalking = animator.GetBool("isCwalking");
-        bool cforwardPressed = Input.GetKey(KeyCode.LeftControl) && Input.GetKey("w");
-=======
         bool downPressed = Input.GetKey(KeyCode.LeftControl) && !(Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"));;
         bool isCwalking = animator.GetBool("isCwalking");
         bool cforwardPressed = Input.GetKey(KeyCode.LeftControl) && (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"));
->>>>>>> sub-branch-3
         bool isBwalking = animator.GetBool("isBwalking");
         bool backwardsPressed = Input.GetKey("s");
 
