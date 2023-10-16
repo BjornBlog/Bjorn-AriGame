@@ -11,13 +11,13 @@ public class SceneSwitcher : MonoBehaviour
     SceneManager.LoadScene(levelName);
    }
    void Awake()
-   {
-    Cursor.lockState = CursorLockMode.Confined;
-   }
-   
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
 void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             loadLevel("Menu");
         }

@@ -27,7 +27,7 @@ public class detectObject : MonoBehaviour
             print(count);
         }
 
-        if (count == 7)
+        if (count == 1)
         {
             Application.LoadLevel("Death");
         }
