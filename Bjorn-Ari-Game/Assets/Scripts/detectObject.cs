@@ -7,6 +7,10 @@ using UnityEngine.SceneManagement;
 public class detectObject : MonoBehaviour
 {
     int count = 0;
+
+    int count2 = 0;
+
+    int score = 0;
     void Start()
     {
         
@@ -14,7 +18,7 @@ public class detectObject : MonoBehaviour
 
     void Update()
     {
-        
+        print(score);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -23,13 +27,22 @@ public class detectObject : MonoBehaviour
         {
             print("doable");
             count += 1;
+            score += 10;
             Destroy(collision.gameObject);
             print(count);
         }
 
-        if (count == 1)
+        if (count == 6)
         {
             Application.LoadLevel("Death");
+        }
+
+         if (collision.gameObject.tag == "Ob2")
+        {
+            count2 += 1;
+            score += 15;
+            Destroy(collision.gameObject);
+            print(count2);
         }
     }
 }
