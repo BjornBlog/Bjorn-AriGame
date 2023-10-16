@@ -452,6 +452,7 @@
 "Assets/Scripts/FirstPersonController.cs"
 "Assets/Scripts/LightScript.cs"
 "Assets/Scripts/PlayerCollision.cs"
+"Assets/Scripts/PointsScript.cs"
 "Assets/Scripts/THC6_ctrl.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
