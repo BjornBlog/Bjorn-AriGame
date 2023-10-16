@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638310061730000000
+      ticks: 638321280900000000
     m_Hash: 1861298817
   m_LockFileStatus:
     m_FilePath: /Users/broberts25/Desktop/Bjorn-Ari-Game/Bjorn-AriGame/Bjorn-Ari-Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638310061730000000
+      ticks: 638321280900000000
     m_Hash: 1230220315
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -52,10 +52,13 @@ m_ResolvedPackages:
     - 1.1.1
     - 1.1.3
     - 1.1.4
+    - 1.1.5
     - 2.0.0-pre.3
+    - 2.0.0-pre.4
     compatible:
     - 1.1.4
-    recommended: 1.1.4
+    - 1.1.5
+    recommended: 1.1.5
     deprecated: []
   dependencies:
   - name: com.unity.modules.ai
@@ -1405,6 +1408,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.3
     - 3.2.0-pre.4
     - 3.2.0-pre.5
+    - 3.2.0-pre.6
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
@@ -1414,6 +1418,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.3
     - 3.2.0-pre.4
     - 3.2.0-pre.5
+    - 3.2.0-pre.6
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     recommended: 3.0.6
@@ -4583,6 +4588,7 @@ m_ResolvedPackages:
     - 2.0.0-pre.8
     - 2.0.1
     - 2.0.2
+    - 2.1.0
     compatible:
     - 1.4.0
     - 2.0.0-exp.6
@@ -4596,6 +4602,7 @@ m_ResolvedPackages:
     - 2.0.0-pre.8
     - 2.0.1
     - 2.0.2
+    - 2.1.0
     recommended: 1.4.0
     deprecated: []
   dependencies:
@@ -5121,10 +5128,12 @@ m_ResolvedPackages:
     - 5.0.7
     - 5.1.0
     - 5.1.1
+    - 5.2.0
     compatible:
     - 5.0.7
     - 5.1.0
     - 5.1.1
+    - 5.2.0
     recommended: 5.0.7
     deprecated: []
   dependencies:
@@ -5353,9 +5362,11 @@ m_ResolvedPackages:
     - 5.0.0-pre.1
     - 5.0.0
     - 5.1.0-pre.1
+    - 5.1.0
     compatible:
     - 5.0.0
     - 5.1.0-pre.1
+    - 5.1.0
     recommended: 5.0.0
     deprecated: []
   dependencies:
@@ -5716,6 +5727,8 @@ m_ResolvedPackages:
     - 3.0.0-pre.5
     - 3.0.0-pre.6
     - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
     compatible:
     - 2.9.5
     - 2.9.7
@@ -5724,6 +5737,8 @@ m_ResolvedPackages:
     - 3.0.0-pre.5
     - 3.0.0-pre.6
     - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
     recommended: 2.9.7
     deprecated: []
   dependencies:
@@ -6026,10 +6041,12 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.7
     - 1.8.8
+    - 1.8.9
     compatible:
     - 1.8.7
     - 1.8.8
-    recommended: 1.8.8
+    - 1.8.9
+    recommended: 1.8.9
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -6694,10 +6711,14 @@ m_ResolvedPackages:
     - 1.21.7
     - 1.21.8
     - 1.21.9
+    - 1.21.20
+    - 2.0.1
     compatible:
     - 1.21.8
     - 1.21.9
-    recommended: 1.21.9
+    - 1.21.20
+    - 2.0.1
+    recommended: 1.21.20
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -6859,9 +6880,11 @@ m_ResolvedPackages:
     - 5.0.0-pre.1
     - 5.0.0
     - 5.1.0-pre.1
+    - 5.1.0
     compatible:
     - 5.0.0
     - 5.1.0-pre.1
+    - 5.1.0
     recommended: 5.0.0
     deprecated: []
   dependencies: []

@@ -2,18 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class LightScript : MonoBehaviour
 {
+    public GameObject textobj;
+
+    [SerializeField]
+    private TextMeshProUGUI batteryShowCount;
     public Slider batBar;
     private FirstPersonController PlayerScript;
     private Light light;
     private bool isOn = false;
     public int batteryCount = 1;
     public float batteryPercent = 100f;
+
     // Start is called before the first frame update
     void Start()
-    {
+    {   
         PlayerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
         light = GetComponent<Light> ();
 		light.enabled = false;
@@ -36,7 +42,7 @@ public class LightScript : MonoBehaviour
         }
         else
         {
-            //TellPlayerNoBatteries
+            //TellPlayerNoBatteries with bad sound ok
             return false;
         }
 
@@ -81,6 +87,7 @@ public class LightScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        batteryShowCount.text = batteryCount.ToString();
         batBar.value = batteryPercent;
         if(light.enabled && batteryPercent > 0)
         {
