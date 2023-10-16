@@ -18934,3 +18934,11 @@ Received Import Request.
 Start importing Assets/Scripts/PointsScript.cs using Guid(56048da94ae324dcabf165ed2b62f602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12cd02fd6afd622219b1027ef7a3d41') in 0.001304 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 378.947175 seconds.
+  path: Assets/Scripts/PointsScript.cs
+  artifactKey: Guid(56048da94ae324dcabf165ed2b62f602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PointsScript.cs using Guid(56048da94ae324dcabf165ed2b62f602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c4ed9bee6b0efd5d64727532164326a') in 0.000534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
