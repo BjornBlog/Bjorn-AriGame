@@ -12,25 +12,28 @@ public class PickupDrop : MonoBehaviour
 
     [SerializeField]
     private LayerMask pickUpLayerMask;
-    void Start()
-    {
-        
-    }
 
-    
+    private ObjectGrabbable objectGrabbable;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            float pickupDistance = 2f;
-            if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, pickupDistance))
+            if (objectGrabbable == null)
             {
-                Debug.Log(raycastHit.transform);
-                if (raycastHit.transform.TryGetComponent(out ObjectGrabbable objectGrabbable))
+                float pickupDistance = 4f;
+                if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, pickupDistance))
                 {
-                    objectGrabbable.Grab(objectGrabPointTransform);
-                    Debug.Log(objectGrabbable);
+                    Debug.Log(raycastHit.transform);
+                    if (raycastHit.transform.TryGetComponent(out objectGrabbable))
+                    {
+                        objectGrabbable.Grab(objectGrabPointTransform);
+                        Debug.Log(objectGrabbable);
+                    }
                 }
+            } else
+            {
+                objectGrabbable.Drop();
+                objectGrabbable = null;
             }
         }
     }

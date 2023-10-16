@@ -20,7 +20,7 @@ public class camerafollowing : MonoBehaviour
         float InputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
         cameraVerticalRotation -= InputY;
-        cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 70f);
+        cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 40f);
         transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
         // player.Rotate(Vector3.up * inputX;)
     }
