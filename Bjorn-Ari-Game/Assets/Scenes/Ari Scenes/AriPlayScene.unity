@@ -2066,7 +2066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c754d85dc30464ab5c0d703729bea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeMultiplier: 10000
+  timeMultiplier: 500
   startHour: 12
   timeText: {fileID: 214784473}
   sunLight: {fileID: 21764348}
@@ -3879,7 +3879,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 1
   m_VoxelSize: 0.49
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: ec5b85a78d02d48a7b6e4c82f7d01010, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: c9f3a2138cf44403ca7aacd0f9c4107f, type: 2}
   m_BuildHeightMesh: 1
 --- !u!1 &1521116743
 GameObject:
