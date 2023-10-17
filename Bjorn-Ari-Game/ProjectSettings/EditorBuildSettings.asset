@@ -6,7 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/BjornTest.unity
+=======
+    path: Assets/Scenes/Ari Scenes/Menu.unity
+    guid: e35d0f9841eed45e99fcbbfa1e07079c
+  - enabled: 1
+    path: Assets/Scenes/Ari Scenes/AriPlayScene.unity
+    guid: 98dccd192fc864203ab855dc61a45109
+  - enabled: 1
+    path: Assets/Scenes/Test.unity
+>>>>>>> sub-branch-3
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Ari Scenes/Death.unity
+    guid: e933372ab1c1d4a6296bb2d703733966
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

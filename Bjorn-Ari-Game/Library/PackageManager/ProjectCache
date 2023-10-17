@@ -5728,7 +5728,10 @@ m_ResolvedPackages:
     - 3.0.0-pre.6
     - 3.0.0-pre.7
     - 3.0.0-pre.8
+<<<<<<< HEAD
     - 3.0.0-pre.9
+=======
+>>>>>>> sub-branch-3
     compatible:
     - 2.9.5
     - 2.9.7
@@ -5738,7 +5741,10 @@ m_ResolvedPackages:
     - 3.0.0-pre.6
     - 3.0.0-pre.7
     - 3.0.0-pre.8
+<<<<<<< HEAD
     - 3.0.0-pre.9
+=======
+>>>>>>> sub-branch-3
     recommended: 2.9.7
     deprecated: []
   dependencies:

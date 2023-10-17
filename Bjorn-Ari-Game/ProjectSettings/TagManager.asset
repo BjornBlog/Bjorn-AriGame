@@ -5,17 +5,22 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+<<<<<<< HEAD
   - VisionConeAI
   - FlashlightBulb
   - Battery
+=======
+  - Ob1
+  - Ob2
+>>>>>>> sub-branch-3
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - player
   - Water
   - UI
-  - 
+  - object
   - 
   - 
   - Player
