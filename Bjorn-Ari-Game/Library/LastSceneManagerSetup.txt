@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/BjornTest.unity
-=======
 - path: Assets/Scenes/Ari Scenes/AriPlayScene.unity
->>>>>>> sub-branch-3
   isLoaded: 1
   isActive: 1
   isSubScene: 0

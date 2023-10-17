@@ -18,6 +18,6 @@ public class PointsScript : MonoBehaviour
     }
     int CaluculateScore()
     {
-
+        return 1;
     }
 }
