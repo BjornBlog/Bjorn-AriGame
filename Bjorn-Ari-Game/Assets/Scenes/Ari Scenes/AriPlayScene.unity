@@ -1899,7 +1899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeMultiplier: 500
   startHour: 12
-  timeText: {fileID: 0}
+  timeText: {fileID: 1984916471}
   sunLight: {fileID: 21764348}
   sunriseHour: 7
   sunsetHour: 20.5
@@ -5855,6 +5855,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1984916469}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1984916471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4536395161176706557, guid: 89ca26deed6a743be8c8218cb3883e01,
+    type: 3}
+  m_PrefabInstance: {fileID: 1984916469}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2107329062
 PrefabInstance:
   m_ObjectHideFlags: 0
