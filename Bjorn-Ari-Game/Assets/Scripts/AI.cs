@@ -46,6 +46,7 @@ public class AI : MonoBehaviour
         //     visonDistance = 40;
         // }
         playerNoise = playerScript.noise();
+        print("sound is " +playerNoise);
         if(playerSeen)
         {
             float pdX = player1.transform.position.x - enemy.transform.position.x;
