@@ -22,7 +22,11 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 50062
+=======
+49456
+>>>>>>> sub-branch-3
 Successfully changed project path to: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game
 /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,12 +60,21 @@ Successfully changed project path to: /Users/akaganov25/Documents/GitHub/Bjorn-A
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [140704577148672] Host "[IP] 10.127.0.144 [Port] 0 [Flags] 2 [Guid] 653793840 [EditorId] 653793840 [Version] 1048832 [Id] OSXEditor(0,HS-Lab-IM-22) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [140704577148672] Host "[IP] 10.127.0.144 [Port] 0 [Flags] 2 [Guid] 653793840 [EditorId] 653793840 [Version] 1048832 [Id] OSXEditor(0,HS-Lab-IM-22) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
 Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 119.89 ms, found 4 plugins.
+=======
+Player connection [140704593164032] Host "[IP] 10.127.0.144 [Port] 0 [Flags] 2 [Guid] 1426036177 [EditorId] 1426036177 [Version] 1048832 [Id] OSXEditor(0,HS-Lab-IM-22) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [140704593164032] Host "[IP] 10.127.0.144 [Port] 0 [Flags] 2 [Guid] 1426036177 [EditorId] 1426036177 [Version] 1048832 [Id] OSXEditor(0,HS-Lab-IM-22) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 311.22 ms, found 4 plugins.
+>>>>>>> sub-branch-3
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.1.10f1 (661833f8c66c)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2023.1.10f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -76,7 +89,11 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2023.1.10f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2023.1.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2023.1.10f1/Unity.app/Contents/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56322
+>>>>>>> sub-branch-3
 Begin MonoManager ReloadAssembly
 icall.c:1842:
 icall.c:1842:
@@ -91,21 +108,33 @@ icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2023.1.10f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2023.1.10f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+<<<<<<< HEAD
 Registered in 0.001780 seconds.
 - Loaded All Assemblies, in  0.473 seconds
+=======
+Registered in 0.034260 seconds.
+- Loaded All Assemblies, in  0.662 seconds
+>>>>>>> sub-branch-3
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
 icall.c:1842:
 icall.c:1842:
+<<<<<<< HEAD
 - Finished resetting the current domain, in  0.463 seconds
 Domain Reload Profiling: 936ms
 	BeginReloadAssembly (95ms)
+=======
+- Finished resetting the current domain, in  0.361 seconds
+Domain Reload Profiling: 1022ms
+	BeginReloadAssembly (254ms)
+>>>>>>> sub-branch-3
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 	RebuildCommonClasses (54ms)
 	RebuildNativeTypeToScriptingClass (16ms)
 	initialDomainReloadingComplete (62ms)
@@ -127,6 +156,29 @@ Domain Reload Profiling: 936ms
 			BeforeProcessingInitializeOnLoad (11ms)
 			ProcessInitializeOnLoadAttributes (313ms)
 			ProcessInitializeOnLoadMethodAttributes (58ms)
+=======
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (91ms)
+	LoadAllAssembliesAndSetupDomain (250ms)
+		LoadAssemblies (261ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (239ms)
+			TypeCache.Refresh (238ms)
+				TypeCache.ScanAssembly (223ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (361ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (306ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (209ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+>>>>>>> sub-branch-3
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -135,6 +187,7 @@ Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Pro
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
+<<<<<<< HEAD
 Script is not up to date after domain reload: guid(103e0a6a1d404693b9fb1a5173e0e979) path("Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs") state(2)
 Script is not up to date after domain reload: guid(6e2744403d2cbfb4f867bb5e724215a8) path("Assets/Scripts/THC6_ctrl.cs") state(2)
 Script is not up to date after domain reload: guid(f7cfa58e417a46ea8889989684c2522e) path("Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs") state(2)
@@ -197,3 +250,5 @@ icall.c:1842:
 icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+=======
+>>>>>>> sub-branch-3
