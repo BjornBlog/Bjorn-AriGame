@@ -12,6 +12,7 @@ public class AI : MonoBehaviour
     private FirstPersonController playerScript;
     public GameObject enemy;
     private int playerNoise = 0;
+    bool isPatroling = false;
     public bool playerSeen = false;
     // public float distanceX;
     // public float distanceY;
@@ -24,20 +25,18 @@ public class AI : MonoBehaviour
     {
         player1 = GameObject.FindGameObjectWithTag ("Player");
         playerScript = player1.GetComponent<FirstPersonController>();
-        StartCoroutine(Screach());
         agent = GetComponent<NavMeshAgent>();
     }
     private IEnumerator Screach()
     {
-        while(true)
+        while(!playerFound)
         {
-            if(!playerFound)
-            {
-                yield return new WaitForSeconds(Random.Range(15, 45));
-                enemy.GetComponent<AudioSource>().Play();
-                yield return new WaitForSeconds(15);
-            }
+            yield return new WaitForSeconds(Random.Range(15, 45));
+            print("sceram");
+            enemy.GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(15);
         }
+        isPatroling = false;
     }
     private IEnumerator Patrol()
     {
@@ -105,6 +104,11 @@ public class AI : MonoBehaviour
         }
         else
         {
+            if(!isPatroling)
+            {
+                StartCoroutine(Screach());
+                isPatroling = true;
+            }
             //Patrol
         }
         playerFound = false;
