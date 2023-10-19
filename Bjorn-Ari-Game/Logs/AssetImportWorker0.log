@@ -21256,3 +21256,27 @@ AssetImportParameters requested are different than current active one (requested
   custom:DOTSType/UnityEngine.PhysicMaterial: 130b4f994af53c52130b4f994af53c52 -> 
   custom:DOTSType/UnityEditor.ProBuilder.ProbuilderRotateTool: 14d469c89e0f37a214d469c89e0f37a2 -> 
   custom:DOTSType/UnityEditor.Licensing.UI.Events.Windows.LicenseReturnedWindow: 1cfe51b94186e1541cfe51b94186e154 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 337.967969 seconds.
+  path: Assets/Prefab/PlayerPFB.prefab
+  artifactKey: Guid(76722f5e2ae5d4e00bdd69278ef36254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/PlayerPFB.prefab using Guid(76722f5e2ae5d4e00bdd69278ef36254) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Player': Transition 'StartCwalking' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorUtility.cs:683)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorUtility.cs:649)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/GameObjectInspector.cs:115)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/GameObjectInspector.cs:109)
+UnityEditor.GameObjectInspector:GetPreviewData (bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/GameObjectInspector.cs:952)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/GameObjectInspector.cs:1161)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:44)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:14)
+
+[/Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+
+ -> (artifact id: '02e505c7104d3cf943ec9eb0c7aee8a9') in 0.707214 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 344
