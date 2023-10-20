@@ -447,6 +447,7 @@
 "Assets/camerafollowing.cs"
 "Assets/Scripts/AI.cs"
 "Assets/Scripts/AnimationPlayerScript.cs"
+"Assets/Scripts/camerafollowing.cs"
 "Assets/Scripts/CameraFollowing.cs"
 "Assets/Scripts/detectObject.cs"
 "Assets/Scripts/distanceToTarget.cs"
