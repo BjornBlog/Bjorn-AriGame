@@ -20,14 +20,14 @@ public class AI : MonoBehaviour
     // public float distanceX;
     // public float distanceY;
     // public float distanceZ;
-    public float sonicDistance;
+    public float sonicDistance = 200f;
     public bool playerFound = false;
     private NavMeshAgent[] navAgents;
     private NavMeshAgent agent;
     void Start()
     {
-        player1 = GameObject.FindGameObjectWithTag ("Player");
         playerScript = player1.GetComponent<FirstPersonController>();
+        StartCoroutine(Screach());
         agent = GetComponent<NavMeshAgent>();
     }
     private IEnumerator Screach()

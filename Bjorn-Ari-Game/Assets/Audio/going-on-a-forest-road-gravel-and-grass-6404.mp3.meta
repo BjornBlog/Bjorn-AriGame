@@ -8,10 +8,14 @@ AudioImporter:
     loadType: 0
     sampleRateSetting: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     sampleRateOverride: 44100
 =======
     sampleRateOverride: 8000
 >>>>>>> parent of 63420461 (stuff)
+=======
+    sampleRateOverride: 44100
+>>>>>>> 7ecc09ac4c0364ec002d34f8a45a6cfcd2ed6f94
     compressionFormat: 1
     quality: 1
     conversionMode: 0

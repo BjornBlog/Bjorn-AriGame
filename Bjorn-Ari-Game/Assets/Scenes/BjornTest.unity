@@ -347,6 +347,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &907237247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4062153026457050081, guid: 76722f5e2ae5d4e00bdd69278ef36254,
+    type: 3}
+  m_PrefabInstance: {fileID: 1988413360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1057051513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,7 +1583,7 @@ PrefabInstance:
     - target: {fileID: 4062153026457050081, guid: 76722f5e2ae5d4e00bdd69278ef36254,
         type: 3}
       propertyPath: m_Name
-      value: PlayerPFB (1)
+      value: PlayerPFB
       objectReference: {fileID: 0}
     - target: {fileID: 4505718994426900296, guid: 76722f5e2ae5d4e00bdd69278ef36254,
         type: 3}
@@ -1664,6 +1670,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76722f5e2ae5d4e00bdd69278ef36254, type: 3}
+--- !u!1 &2146999655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6668945231542535731, guid: 7d12644498e5a44a9ae144486bd13350,
+    type: 3}
+  m_PrefabInstance: {fileID: 2707513063795534442}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2117757090270097493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1794,6 +1806,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420477070028973667, guid: 7d12644498e5a44a9ae144486bd13350,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420477070028973667, guid: 7d12644498e5a44a9ae144486bd13350,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156615753195633720, guid: 7d12644498e5a44a9ae144486bd13350,
+        type: 3}
+      propertyPath: thc6
+      value: 
+      objectReference: {fileID: 2146999655}
+    - target: {fileID: 8156615753195633720, guid: 7d12644498e5a44a9ae144486bd13350,
+        type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 907237247}
+    - target: {fileID: 8156615753195633720, guid: 7d12644498e5a44a9ae144486bd13350,
+        type: 3}
+      propertyPath: sonicDistance
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
