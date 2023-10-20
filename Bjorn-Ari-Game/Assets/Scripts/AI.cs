@@ -24,25 +24,10 @@ public class AI : MonoBehaviour
     {
         player1 = GameObject.FindGameObjectWithTag ("Player");
         playerScript = player1.GetComponent<FirstPersonController>();
-        StartCoroutine(Screach());
+
         agent = GetComponent<NavMeshAgent>();
     }
-    private IEnumerator Screach()
-    {
-        while(true)
-        {
-            if(!playerFound)
-            {
-                yield return new WaitForSeconds(Random.Range(15, 45));
-                enemy.GetComponent<AudioSource>().Play();
-                yield return new WaitForSeconds(15);
-            }
-        }
-    }
-    private IEnumerator Patrol()
-    {
-        yield return new WaitForSeconds(Random.Range(15, 45));
-    }
+
     void Update()
     {
         //int layerMask = 1 << 8;
@@ -61,7 +46,6 @@ public class AI : MonoBehaviour
         //     visonDistance = 40;
         // }
         playerNoise = playerScript.noise();
-        print("sound is " +playerNoise);
         if(playerSeen)
         {
             float pdX = player1.transform.position.x - enemy.transform.position.x;

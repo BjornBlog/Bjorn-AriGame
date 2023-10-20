@@ -1,7 +1,6 @@
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-<<<<<<< HEAD
 { "pid": 35942, "tid": 1, "ts": 1697828620539286, "dur": 1132525, "ph": "X", "name": "BuildProgram", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1697828620541058, "dur": 107762, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1697828621447196, "dur": 5517, "ph": "X", "name": "OutputData.Write", "args": {} },
@@ -9,12 +8,3 @@
 { "pid": 35942, "tid": 1, "ts": 1697828621453898, "dur": 164190, "ph": "X", "name": "JsonToString", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1697828621679902, "dur": 1578, "ph": "X", "name": "", "args": {} },
 { "pid": 35942, "tid": 1, "ts": 1697828621679400, "dur": 2369, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-=======
-{ "pid": 35942, "tid": 1, "ts": 1697743718694454, "dur": 1673659, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1697743718700934, "dur": 312904, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1697743720141203, "dur": 14719, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1697743720155924, "dur": 212178, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1697743720157112, "dur": 158470, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1697743720376205, "dur": 1489, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1697743720375710, "dur": 2247, "ph": "X", "name": "Write chrome-trace events", "args": {} },
->>>>>>> MergeTest2(The-Sequal)

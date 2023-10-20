@@ -20,11 +20,9 @@ public class FirstPersonController : MonoBehaviour
     private LightScript Flashlight;
     private GameObject HandHeldLight;
     private Rigidbody rb;
-    private GameObject PlayerObject;
+
     Ray ray;
-    private bool walkSound = false;
-    private bool runSound = false;
-    private GameObject playerModel;
+
     RaycastHit hitData;
 
     public float maxDistance = 10;
@@ -181,8 +179,6 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-        playerModel = GameObject.FindGameObjectWithTag("PlayerModel");
-        PlayerObject = GameObject.FindGameObjectWithTag ("Player");
         HandHeldLight = GameObject.FindGameObjectWithTag ("FlashlightBulb");
         Flashlight = HandHeldLight.GetComponent<LightScript>();
         if(lockCursor)
@@ -416,26 +412,7 @@ public class FirstPersonController : MonoBehaviour
     void FixedUpdate()
     {
         #region Movement
-        if(!runSound && isWalking && isSprinting && isGrounded)
-        {
-            playerModel.GetComponent<AudioSource>().Play();
-            runSound = true;
-        }
-        else if((!isSprinting || !isGrounded) && runSound)
-        {
-            playerModel.GetComponent<AudioSource>().Stop();
-            runSound = false;
-        }
-        if(!walkSound && isWalking && !isSprinting && isGrounded)
-        {
-            PlayerObject.GetComponent<AudioSource>().Play();
-            walkSound = true;
-        }
-        else if((!isWalking || isSprinting || !isGrounded) && walkSound)
-        {
-            PlayerObject.GetComponent<AudioSource>().Stop();
-            walkSound = false;
-        }
+
         if (playerCanMove)
         {
             // Calculate how fast we should be moving
