@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 { 
+    [SerializeField]
+    private GameObject thc6;
     public float maxViewRange = 40f;
     Vector3 playerDirection;
     RaycastHit hit;
@@ -14,6 +16,7 @@ public class AI : MonoBehaviour
     private int playerNoise = 0;
     bool isPatroling = false;
     public bool playerSeen = false;
+    private bool foundSound = false;
     // public float distanceX;
     // public float distanceY;
     // public float distanceZ;
@@ -101,15 +104,22 @@ public class AI : MonoBehaviour
         if(playerFound)
         {
             agent.destination = GameObject.FindWithTag("Player").transform.position;
+            if(!foundSound)
+            {
+                enemy.GetComponent<AudioSource>().Stop();
+                thc6.GetComponent<AudioSource>().Play();
+                foundSound = true;
+            }
         }
         else
         {
             if(!isPatroling)
             {
+                StartCoroutine(Patrol());
                 StartCoroutine(Screach());
                 isPatroling = true;
+                foundSound = false;
             }
-            //Patrol
         }
         playerFound = false;
     }
