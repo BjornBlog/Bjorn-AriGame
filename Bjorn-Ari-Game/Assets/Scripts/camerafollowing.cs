@@ -2,18 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollowing : MonoBehaviour
+public class camerafollowing : MonoBehaviour
 {
-    public GameObject player;
-    // Start is called before the first frame update
+    public Transform player;
+    public float mouseSensitivity = 2f;
+    float cameraVerticalRotation = 0f;
+    bool lockedCurser = true;
     void Start()
     {
-        player = GameObject.Find("character");
+       Cursor.visible = false;
+       Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 5, player.transform.position.z - 10);
+        float InputX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        float InputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+
+        cameraVerticalRotation -= InputY;
+        cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 40f);
+        transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
+        // player.Rotate(Vector3.up * inputX;)
     }
 }
