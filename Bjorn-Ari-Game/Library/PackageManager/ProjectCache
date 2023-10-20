@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638333383080000000
+      ticks: 638304006700000000
     m_Hash: 1861298817
   m_LockFileStatus:
     m_FilePath: /Users/akaganov25/Documents/GitHub/Bjorn-AriGame/Bjorn-Ari-Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638333383080000000
+      ticks: 638304006700000000
     m_Hash: 1230220315
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -55,7 +55,6 @@ m_ResolvedPackages:
     - 1.1.5
     - 2.0.0-pre.3
     - 2.0.0-pre.4
-    - 2.0.0
     compatible:
     - 1.1.4
     - 1.1.5
