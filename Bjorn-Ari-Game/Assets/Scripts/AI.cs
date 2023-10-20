@@ -5,8 +5,7 @@ using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 { 
-    [SerializeField]
-    private GameObject thc6;
+    public GameObject thc6;
     public float maxViewRange = 40f;
     Vector3 playerDirection;
     RaycastHit hit;

@@ -1465,12 +1465,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79d2b1d9068b48829ae481678b9d3d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thc6: {fileID: 0}
+  thc6: {fileID: 6668945231542535731}
   maxViewRange: 40
   player1: {fileID: 0}
   enemy: {fileID: 4401459110104426971}
   playerSeen: 0
-  sonicDistance: 0
+  sonicDistance: 200
   playerFound: 0
 --- !u!136 &611162338498704894
 CapsuleCollider:
@@ -2491,7 +2491,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a2067bdc63f884c58ba359806342a53f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
