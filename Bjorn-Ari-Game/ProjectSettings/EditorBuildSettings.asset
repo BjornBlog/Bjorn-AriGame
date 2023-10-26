@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 04fa6749deb2e4d22b63996d86349f43
+  - enabled: 1
+    path: Assets/Scenes/Ari Scenes/Win.unity
+    guid: 0dbdc4633a625407bb007a07249d4589
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

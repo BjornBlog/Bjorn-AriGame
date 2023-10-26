@@ -24,6 +24,7 @@ public class PlayerCollision : MonoBehaviour
         if(playerDead)
         {
             print("player Dead");
+            Application.LoadLevel("Death");
         }
         else if(playerHealth <= 0)
         {

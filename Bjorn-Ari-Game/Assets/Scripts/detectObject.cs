@@ -18,7 +18,7 @@ public class detectObject : MonoBehaviour
 
     void Update()
     {
-        print(score);
+        // print(score);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -32,9 +32,9 @@ public class detectObject : MonoBehaviour
             print(count);
         }
 
-        if (count == 6)
+        if (count == 5)
         {
-            Application.LoadLevel("Death");
+            Application.LoadLevel("Win");
         }
 
          if (collision.gameObject.tag == "Ob2")
