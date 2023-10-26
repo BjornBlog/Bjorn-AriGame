@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":-25.186996459960939,"y":-8.558929443359375,"z":24.895240783691408},"rotation":{"x":0.21496808528900147,"y":-0.36199715733528139,"z":0.08617009967565537,"w":0.9029537439346314},"size":30.736309051513673,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":1.9514665603637696,"y":-2.114590644836426,"z":17.23243522644043},"rotation":{"x":-0.1373898833990097,"y":-0.08251053839921951,"z":0.011485288850963116,"w":-0.9870080351829529},"size":26.70858383178711,"orthographic":false}
+>>>>>>> origin/BjornBranch2(The-Sequal)
