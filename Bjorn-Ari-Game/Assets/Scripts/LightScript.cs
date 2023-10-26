@@ -6,8 +6,6 @@ using TMPro;
 
 public class LightScript : MonoBehaviour
 {
-    public GameObject textobj;
-
     [SerializeField]
     private TextMeshProUGUI batteryShowCount;
     public Slider batBar;
@@ -91,7 +89,7 @@ public class LightScript : MonoBehaviour
         batBar.value = batteryPercent;
         if(light.enabled && batteryPercent > 0)
         {
-            batteryPercent = batteryPercent - 0.02f;
+            batteryPercent = batteryPercent - 0.04f;
         }
         else if(light.enabled)
         {

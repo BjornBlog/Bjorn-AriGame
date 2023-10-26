@@ -5,6 +5,20 @@ using UnityEngine;
 using TMPro;
 public class TimeCycle : MonoBehaviour
 {
+    public Vector3 origin1 = Vector3.zero;
+    public float radius1 = 10;
+    public Vector3 origin2 = Vector3.zero;
+    public float radius2 = 10;
+    public Vector3 origin3 = Vector3.zero;
+    public float radius3 = 10;
+    [SerializeField]
+    private GameObject enemy1;
+    [SerializeField]
+    private GameObject enemy2;
+    [SerializeField]
+    private GameObject enemy3;
+    private int nightCount = 0;
+    private bool nightStart = true;
     [SerializeField]
     private float timeMultiplier;
     
@@ -49,7 +63,6 @@ public class TimeCycle : MonoBehaviour
     void Start()
     {
         currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
-
         sunriseTime = TimeSpan.FromHours(sunriseHour);
         sunsetTime = TimeSpan.FromHours(sunsetHour);
     }
@@ -66,7 +79,7 @@ public class TimeCycle : MonoBehaviour
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
         if (timeText != null)
-        {
+        { 
             timeText.text = currentTime.ToString("HH:mm");
         }
     }
@@ -83,9 +96,27 @@ public class TimeCycle : MonoBehaviour
             double percentage = timeSinceSunrise.TotalMinutes / sunriseToSunsetDuration.TotalMinutes;
 
             sunLightRotation = Mathf.Lerp(90, 270, (float)percentage);
+            nightStart = true;
         }
         else
         {
+            if(nightStart)
+            {
+                nightCount += 1;
+                Vector3 randomPosition1 = origin1 + UnityEngine.Random.insideUnitSphere * radius1;
+                Instantiate(enemy1, randomPosition1, Quaternion.identity);
+                if(nightCount >= 3)
+                {
+                    Vector3 randomPosition2 = origin2 + UnityEngine.Random.insideUnitSphere * radius2;
+                    Instantiate(enemy2, randomPosition2, Quaternion.identity);
+                    if(nightCount >= 6)
+                    {
+                        Vector3 randomPosition3 = origin3 + UnityEngine.Random.insideUnitSphere * radius3;
+                        Instantiate(enemy3, randomPosition3, Quaternion.identity);
+                    }
+                }
+                nightStart = false;
+            }
             TimeSpan sunsetToSunriseDuration = CalculateTimeDifference(sunsetTime, sunriseTime);
             TimeSpan timeSinceSunset = CalculateTimeDifference(sunsetTime, currentTime.TimeOfDay);
 
