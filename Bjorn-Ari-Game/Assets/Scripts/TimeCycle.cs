@@ -5,6 +5,8 @@ using UnityEngine;
 using TMPro;
 public class TimeCycle : MonoBehaviour
 {
+    private GameObject pauseObject;
+    private PauseScreen pauseSystem;
     public Vector3 origin1 = Vector3.zero;
     public float radius1 = 10;
     public Vector3 origin2 = Vector3.zero;
@@ -68,8 +70,17 @@ public class TimeCycle : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Awake()
+    {
+        pauseObject = GameObject.FindGameObjectWithTag ("Pause");
+        pauseSystem = pauseObject.GetComponent<PauseScreen>();
+    }
     void Update()
     {
+        if (pauseSystem.GetIsPaused())
+        { 
+            return; 
+        }
         UpdateTimeOfDay();
         RotateSun();
         UpdateLightSettings();

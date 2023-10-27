@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.AI; 
 
 public class AI : MonoBehaviour
-{ 
+{
+    private GameObject pauseObject;
+    private PauseScreen pauseSystem; 
     public GameObject thc6;
     public float maxViewRange = 40f;
     Vector3 playerDirection;
@@ -23,6 +25,11 @@ public class AI : MonoBehaviour
     public bool playerFound = false;
     private NavMeshAgent[] navAgents;
     private NavMeshAgent agent;
+    void Awake()
+    {
+        pauseObject = GameObject.FindGameObjectWithTag ("Pause");
+        pauseSystem = pauseObject.GetComponent<PauseScreen>();
+    }
     void Start()
     {
         playerScript = player1.GetComponent<FirstPersonController>();
@@ -46,6 +53,10 @@ public class AI : MonoBehaviour
     }
     void Update()
     {
+        if (pauseSystem.GetIsPaused())
+        { 
+            return; 
+        }
         //int layerMask = 1 << 8;
         Vector3 p1 = transform.position;
         Vector3 delta = enemy.transform.position - player1.transform.position;

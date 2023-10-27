@@ -16,6 +16,8 @@ using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
+    private GameObject pauseObject;
+    private PauseScreen pauseSystem;
     public bool isLightOn = false;
     private LightScript Flashlight;
     private GameObject HandHeldLight;
@@ -163,8 +165,9 @@ public class FirstPersonController : MonoBehaviour
     
     private void Awake()
     {
+        pauseObject = GameObject.FindGameObjectWithTag ("Pause");
+        pauseSystem = pauseObject.GetComponent<PauseScreen>();
         rb = GetComponent<Rigidbody>();
-
         crosshairObject = GetComponentInChildren<Image>();
 
         // Set internal variables
@@ -415,6 +418,10 @@ public class FirstPersonController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (pauseSystem.GetIsPaused())
+        { 
+            return; 
+        }
         #region Movement
         if(!runSound && isWalking && isSprinting && isGrounded)
         {
