@@ -139,4 +139,8 @@ public class AI : MonoBehaviour
             playerSeen = false;
         }
     }
+    public void DestroyEnemy()
+    {
+        Destroy(gameObject);
+    }
 }

@@ -18,7 +18,7 @@ public class TimeCycle : MonoBehaviour
     [SerializeField]
     private GameObject enemy3;
     private int nightCount = 0;
-    private bool nightStart = true;
+    public bool nightStart = true;
     [SerializeField]
     private float timeMultiplier;
     
@@ -96,7 +96,10 @@ public class TimeCycle : MonoBehaviour
             double percentage = timeSinceSunrise.TotalMinutes / sunriseToSunsetDuration.TotalMinutes;
 
             sunLightRotation = Mathf.Lerp(90, 270, (float)percentage);
-            nightStart = true;
+            if(!nightStart)
+            {
+                nightStart = true;
+            }
         }
         else
         {
