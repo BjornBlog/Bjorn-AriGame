@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638331671220000000
-    m_Hash: 1861298817
+      ticks: 638345478580000000
+    m_Hash: 1327036810
   m_LockFileStatus:
     m_FilePath: /Users/broberts25/Desktop/Bjorn-Ari-Game/Bjorn-AriGame/Bjorn-Ari-Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638331671220000000
-    m_Hash: 1230220315
+      ticks: 638345478580000000
+    m_Hash: 3240686878
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,72 @@ m_LocalPackages:
 m_ProjectPath: /Users/broberts25/Desktop/Bjorn-Ari-Game/Bjorn-AriGame/Bjorn-Ari-Game/Packages
 m_EditorVersion: 2023.1.10f1 (661833f8c66c)
 m_ResolvedPackages:
+- packageId: com.unity.2d.sprite@1.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0
+  source: 2
+  resolvedPath: /Users/broberts25/Desktop/Bjorn-Ari-Game/Bjorn-AriGame/Bjorn-Ari-Game/Library/PackageCache/com.unity.2d.sprite@1.0.0
+  assetPath: Packages/com.unity.2d.sprite
+  name: com.unity.2d.sprite
+  displayName: 2D Sprite
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: Use Unity Sprite Editor Window to create and edit Sprite asset properties
+    like pivot, borders and Physics shape
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - 2d
+  - sprite
+  - sprite editor window
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
 - packageId: com.unity.ai.navigation@1.1.4
   testable: 0
   isDirectDependency: 1
@@ -55,6 +121,7 @@ m_ResolvedPackages:
     - 1.1.5
     - 2.0.0-pre.3
     - 2.0.0-pre.4
+    - 2.0.0
     compatible:
     - 1.1.4
     - 1.1.5
@@ -6721,13 +6788,15 @@ m_ResolvedPackages:
     - 1.21.8
     - 1.21.9
     - 1.21.20
+    - 1.21.21
     - 2.0.1
     compatible:
     - 1.21.8
     - 1.21.9
     - 1.21.20
+    - 1.21.21
     - 2.0.1
-    recommended: 1.21.20
+    recommended: 1.21.21
     deprecated: []
   dependencies: []
   resolvedDependencies: []

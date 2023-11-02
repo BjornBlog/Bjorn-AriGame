@@ -10,7 +10,13 @@ TagManager:
   - Enemy
   - Battery
   - PlayerModel
+<<<<<<< HEAD
   - Pause
+=======
+  - Ob3
+  - Ob4
+  - Ob5
+>>>>>>> origin/sub-branch-6
   layers:
   - Default
   - TransparentFX
