@@ -29,6 +29,7 @@ public class PlayerCollision : MonoBehaviour
         {
             playerHealth = 0;
             playerDead = true;
+            Application.LoadLevel("Death");
         }
     }
 
@@ -37,7 +38,7 @@ public class PlayerCollision : MonoBehaviour
         print("Collide");
         if(other.gameObject.tag == "Enemy")
         {
-            playerHealth = playerHealth - 10;
+            playerHealth = playerHealth - 100;
             print(playerHealth);
         }
         if(other.gameObject.tag == "Battery")

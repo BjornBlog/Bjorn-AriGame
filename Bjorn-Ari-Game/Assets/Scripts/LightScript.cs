@@ -6,7 +6,6 @@ using TMPro;
 
 public class LightScript : MonoBehaviour
 {
-    public GameObject textobj;
 
     [SerializeField]
     private TextMeshProUGUI batteryShowCount;
@@ -50,6 +49,7 @@ public class LightScript : MonoBehaviour
     public bool DisableLight()
     {        
         isOn = false;
+        light.GetComponent<AudioSource>().Stop();
         light.enabled = false;
         return false;
     }
@@ -57,6 +57,7 @@ public class LightScript : MonoBehaviour
     {
         print("Startup");
         light.enabled = true;
+        light.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(Random.Range(300, 700)/1000);
         light.enabled = false;
         yield return new WaitForSeconds(Random.Range(400, 1300)/1000);
@@ -78,6 +79,7 @@ public class LightScript : MonoBehaviour
     private IEnumerator BatteryDeath()
     {
         light.enabled = false;
+        light.GetComponent<AudioSource>().Stop();
         yield return new WaitForSeconds(Random.Range(300, 700)/1000);
         light.enabled = true;
         yield return new WaitForSeconds(Random.Range(400, 1300)/1000);

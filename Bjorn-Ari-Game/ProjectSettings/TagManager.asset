@@ -10,6 +10,9 @@ TagManager:
   - Enemy
   - Battery
   - PlayerModel
+  - Ob3
+  - Ob4
+  - Ob5
   layers:
   - Default
   - TransparentFX
