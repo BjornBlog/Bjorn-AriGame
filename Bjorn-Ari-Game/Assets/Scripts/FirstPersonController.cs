@@ -239,6 +239,10 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+        if(pauseSystem.GetIsPaused())
+        { 
+            return; 
+        }
         if(Input.GetMouseButtonDown(1))
         {
             if(!isLightOn)

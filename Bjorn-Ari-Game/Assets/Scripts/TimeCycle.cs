@@ -109,6 +109,7 @@ public class TimeCycle : MonoBehaviour
             sunLightRotation = Mathf.Lerp(90, 270, (float)percentage);
             if(!nightStart)
             {
+                
                 nightStart = true;
             }
         }
@@ -117,16 +118,13 @@ public class TimeCycle : MonoBehaviour
             if(nightStart)
             {
                 nightCount += 1;
-                Vector3 randomPosition1 = origin1 + UnityEngine.Random.insideUnitSphere * radius1;
-                Instantiate(enemy1, randomPosition1, Quaternion.identity);
+                create(1);
                 if(nightCount >= 3)
                 {
-                    Vector3 randomPosition2 = origin2 + UnityEngine.Random.insideUnitSphere * radius2;
-                    Instantiate(enemy2, randomPosition2, Quaternion.identity);
+                    create(2);
                     if(nightCount >= 6)
                     {
-                        Vector3 randomPosition3 = origin3 + UnityEngine.Random.insideUnitSphere * radius3;
-                        Instantiate(enemy3, randomPosition3, Quaternion.identity);
+                        create(3);
                     }
                 }
                 nightStart = false;
@@ -158,5 +156,18 @@ public class TimeCycle : MonoBehaviour
         }
 
         return difference;
+    }
+    Vector3 GeneratedPosition()
+    {
+        int x, y, z;
+        x = Random.Range(-10, 10);
+        y = Random.Range(7, 10);
+        z = Random.Range(-10, 10);
+        return new Vector3(x, y, z);
+    }
+    void create(int number)
+    {
+        // randomInt = Random.Range(0, enemy.Length);
+        Instantiate(enemy1, GeneratedPosition(), Quaternion.identity);
     }
 }

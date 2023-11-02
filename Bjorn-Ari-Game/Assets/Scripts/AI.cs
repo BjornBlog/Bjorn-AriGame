@@ -152,6 +152,6 @@ public class AI : MonoBehaviour
     }
     public void DestroyEnemy()
     {
-        Destroy(gameObject);
+        Destroy(enemy);
     }
 }

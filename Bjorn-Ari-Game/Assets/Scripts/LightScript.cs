@@ -62,7 +62,7 @@ public class LightScript : MonoBehaviour
     {
         print("Startup");
         light.enabled = true;
-        yield return new WaitForSeconds(Random.Range(300, 700)/1000);
+        yield return new WaitForSeconds(Random.Range(500, 700)/1000);
         light.enabled = false;
         yield return new WaitForSeconds(Random.Range(400, 1300)/1000);
         light.enabled = true;
@@ -73,11 +73,10 @@ public class LightScript : MonoBehaviour
         while (isOn)
         {
             print("Flicker");
-            yield return new WaitForSeconds(Random.Range(500, 700)/1000);
             light.enabled = false;
-            yield return new WaitForSeconds(Random.Range(400, 800)/1000);
+            yield return new WaitForSeconds(Random.Range(500, 800)/1000);
             light.enabled = true;
-            yield return new WaitForSeconds(Random.Range(400, 1600)/1000);
+            yield return new WaitForSeconds(Random.Range(2000, 6000)/1000);
         }
     }
     private IEnumerator BatteryDeath()
@@ -92,7 +91,7 @@ public class LightScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (pauseSystem.GetIsPaused())
+        if(pauseSystem.GetIsPaused())
         { 
             return; 
         }

@@ -23,14 +23,20 @@ public class PickupDrop : MonoBehaviour
                 float pickupDistance = 4f;
                 if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, pickupDistance))
                 {
+                    
                     Debug.Log(raycastHit.transform);
                     if (raycastHit.transform.TryGetComponent(out objectGrabbable))
                     {
                         objectGrabbable.Grab(objectGrabPointTransform);
                         Debug.Log(objectGrabbable);
                     }
+                    // if(raycastHit.transform.)
+                    // {
+
+                    // }
                 }
-            } else
+            } 
+            else
             {
                 objectGrabbable.Drop();
                 objectGrabbable = null;
