@@ -160,9 +160,9 @@ public class TimeCycle : MonoBehaviour
     Vector3 GeneratedPosition()
     {
         int x, y, z;
-        x = Random.Range(-10, 10);
-        y = Random.Range(7, 10);
-        z = Random.Range(-10, 10);
+        x = UnityEngine.Random.Range(-10, 10);
+        y = UnityEngine.Random.Range(7, 10);
+        z = UnityEngine.Random.Range(-10, 10);
         return new Vector3(x, y, z);
     }
     void create(int number)
