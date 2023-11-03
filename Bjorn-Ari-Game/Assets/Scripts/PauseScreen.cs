@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PauseScreen : MonoBehaviour
 {
-    public GameObject CurrentNote;
     bool isPaused = false;
     [SerializeField] 
     GameObject pauseMenu = null;
@@ -38,7 +37,6 @@ public class PauseScreen : MonoBehaviour
     }
     public void UnPause()
     {
-        CurrentNote.GetComponent<NoteScript>().Done();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         isPaused = false;
