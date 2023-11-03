@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class camerafollowing : MonoBehaviour
 {
-    [SerializeField]
     private GameObject pauseObject;
     private PauseScreen pauseSystem; 
     public Transform player;
@@ -13,6 +12,7 @@ public class camerafollowing : MonoBehaviour
     bool lockedCurser = true;
     void Awake()
     {
+        pauseObject = GameObject.FindGameObjectWithTag ("Pause");
         pauseSystem = pauseObject.GetComponent<PauseScreen>();
     }
     void Start()

@@ -6,7 +6,6 @@ using TMPro;
 
 public class LightScript : MonoBehaviour
 {
-    [SerializeField]
     private GameObject pauseObject;
     private PauseScreen pauseSystem; 
     [SerializeField]
@@ -21,6 +20,7 @@ public class LightScript : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        pauseObject = GameObject.FindGameObjectWithTag ("Pause");
         pauseSystem = pauseObject.GetComponent<PauseScreen>();
     }
     void Start()
@@ -91,6 +91,10 @@ public class LightScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(pauseSystem.GetIsPaused())
+        { 
+            return; 
+        }
         batteryShowCount.text = batteryCount.ToString();
         batBar.value = batteryPercent;
         if(light.enabled && batteryPercent > 0)

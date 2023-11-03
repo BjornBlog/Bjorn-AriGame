@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 public class NoteScript : MonoBehaviour
 {
-    [SerializeField]
     private GameObject pauseObject;
     private PauseScreen pauseSystem; 
     [SerializeField] 
@@ -16,6 +15,7 @@ public class NoteScript : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        pauseObject = GameObject.FindGameObjectWithTag ("Pause");
         pauseSystem = pauseObject.GetComponent<PauseScreen>();
     }
     void Start()
@@ -30,16 +30,12 @@ public class NoteScript : MonoBehaviour
     }
     public void Pickup()
     {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
         pauseSystem.CurrentNote = gameObject;
         isReading = true;
         pauseSystem.Pause();
     }
     public void Done()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
         isReading = false;
         Destroy(gameObject);
     }
