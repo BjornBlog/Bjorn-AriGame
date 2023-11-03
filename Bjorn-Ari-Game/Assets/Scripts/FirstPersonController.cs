@@ -422,10 +422,6 @@ public class FirstPersonController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (pauseSystem.GetIsPaused())
-        { 
-            return; 
-        }
         #region Movement
         if(!runSound && isWalking && isSprinting && isGrounded)
         {
