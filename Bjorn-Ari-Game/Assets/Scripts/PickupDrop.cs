@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PickupDrop : MonoBehaviour
 {
+    public string RaycastReturn;
+    private GameObject FoundObject;
     [SerializeField]
     private Transform playerCameraTransform;
 
@@ -23,17 +25,25 @@ public class PickupDrop : MonoBehaviour
                 float pickupDistance = 4f;
                 if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, pickupDistance))
                 {
-                    
+                    RaycastReturn = raycastHit.collider.gameObject.name;
+                    FoundObject = GameObject.Find(RaycastReturn);
                     Debug.Log(raycastHit.transform);
                     if (raycastHit.transform.TryGetComponent(out objectGrabbable))
                     {
                         objectGrabbable.Grab(objectGrabPointTransform);
                         Debug.Log(objectGrabbable);
                     }
-                    // if(raycastHit.transform.)
-                    // {
-
-                    // }
+                    if(FoundObject.tag == "Note")
+                    {
+                        NoteScript note = FoundObject.GetComponent<NoteScript>();
+                        note.Pickup();
+                    }
+                    if(FoundObject.tag == "Battery")
+                    {
+                        GameObject LightObj = GameObject.FindGameObjectWithTag("Light");
+                        LightScript Light = LightObj.GetComponent<LightScript>();
+                        Light.batteryCount ++;
+                    }
                 }
             } 
             else

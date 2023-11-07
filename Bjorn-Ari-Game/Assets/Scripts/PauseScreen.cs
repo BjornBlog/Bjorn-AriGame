@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PauseScreen : MonoBehaviour
 {
+    public bool note = false;
+    public GameObject noteObj;
+    private NoteScript noteScript;
     bool isPaused = false;
     [SerializeField] 
     GameObject pauseMenu = null;
@@ -27,6 +30,11 @@ public class PauseScreen : MonoBehaviour
         }    
         // pauseMenu.SetActive(isPaused);
     }
+    void FixedUpdate()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     public void Pause()
     {
         Cursor.visible = true;
@@ -37,6 +45,12 @@ public class PauseScreen : MonoBehaviour
     }
     public void UnPause()
     {
+        if(note)
+        {
+            note = false;
+            noteScript = noteObj.GetComponent<NoteScript>();
+            noteScript.Done();
+        }
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         isPaused = false;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class camerafollowing : MonoBehaviour
+public class CameraFollowing : MonoBehaviour
 {
     private GameObject pauseObject;
     private PauseScreen pauseSystem; 
