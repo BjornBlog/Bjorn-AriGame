@@ -25,8 +25,11 @@ public class AI : MonoBehaviour
     public bool playerFound = false;
     private NavMeshAgent[] navAgents;
     private NavMeshAgent agent;
+    private TimeCycle time;
     void Awake()
     {
+        GameObject TimeObject = GameObject.FindGameObjectWithTag("TimeControl");
+        time = TimeObject.GetComponent<TimeCycle>();
         pauseObject = GameObject.FindGameObjectWithTag ("Pause");
         pauseSystem = pauseObject.GetComponent<PauseScreen>();
     }
@@ -49,10 +52,19 @@ public class AI : MonoBehaviour
     }
     private IEnumerator Patrol()
     {
-        yield return new WaitForSeconds(Random.Range(15, 45));
+        while(isPatroling)
+        {
+            Vector3 Destination = RandomNavmeshLocation(Random.Range(20, 50))
+            yield return new WaitForSeconds(Random.Range(15, 30));
+        }
+        
     }
     void Update()
     {
+        if(time.sunsetTime >= time.currentTime.TimeOfDay &&  time.currentTime.TimeOfDay >= time.sunriseTime)
+        {
+            DestroyEnemy();
+        }
         if (pauseSystem.GetIsPaused())
         { 
             return; 
@@ -132,6 +144,18 @@ public class AI : MonoBehaviour
             }
         }
         playerFound = false;
+    }
+    public Vector3 RandomNavmeshLocation(float radius) 
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * radius;
+        randomDirection += transform.position;
+        NavMeshHit hit;
+        Vector3 finalPosition = Vector3.zero;
+        if (NavMesh.SamplePosition(randomDirection, out hit, radius, 1)) 
+        {
+            finalPosition = hit.position;            
+        }
+        return finalPosition;
     }
     private void OnTriggerEnter(Collider other)
     {

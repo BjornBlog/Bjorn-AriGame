@@ -10,10 +10,13 @@ public class PauseScreen : MonoBehaviour
     bool isPaused = false;
     [SerializeField] 
     GameObject pauseMenu = null;
+    [SerializeField] 
+    GameObject noteCanv = null;
     // Start is called before the first frame update
     void Start()
     {
         pauseMenu.SetActive(false);
+        noteCanv.SetActive(false);
     }
     void Update()
     {

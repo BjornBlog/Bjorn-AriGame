@@ -40,10 +40,10 @@ public class PlayerCollision : MonoBehaviour
             playerHealth = playerHealth - 10;
             print(playerHealth);
         }
-        if(other.gameObject.tag == "Battery")
-        {
-            Destroy(other.gameObject);
-            Flashlight.batteryCount = Flashlight.batteryCount + 1;
-        }
+        // if(other.gameObject.tag == "Battery")
+        // {
+        //     Destroy(other.gameObject);
+        //     Flashlight.batteryCount = Flashlight.batteryCount + 1;
+        // }
     }
 }

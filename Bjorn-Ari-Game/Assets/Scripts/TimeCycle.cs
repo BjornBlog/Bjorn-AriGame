@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 public class TimeCycle : MonoBehaviour
 {
+    List<GameObject> Enemy;
     private GameObject pauseObject;
     private PauseScreen pauseSystem;
     public Vector3 origin1 = Vector3.zero;
@@ -32,12 +33,8 @@ public class TimeCycle : MonoBehaviour
 
     [SerializeField]
     private Light sunLight;
-
-    [SerializeField]
-    private float sunriseHour;
-
-    [SerializeField]
-    private float sunsetHour;
+    public float sunriseHour;
+    public float sunsetHour;
 
     [SerializeField]
     private Color dayAmbientLight;
@@ -57,11 +54,11 @@ public class TimeCycle : MonoBehaviour
     [SerializeField]
     private float maxMoonLightIntensity;
 
-    private DateTime currentTime;
+    public DateTime currentTime;
 
-    private TimeSpan sunriseTime;
+    public TimeSpan sunriseTime;
 
-    private TimeSpan sunsetTime;
+    public TimeSpan sunsetTime;
     void Start()
     {
         currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
@@ -92,6 +89,10 @@ public class TimeCycle : MonoBehaviour
         if (timeText != null)
         { 
             timeText.text = currentTime.ToString("HH:mm");
+        }
+        if(sunsetTime >= currentTime.TimeOfDay && currentTime.TimeOfDay >= sunriseTime)
+        {
+
         }
     }
 

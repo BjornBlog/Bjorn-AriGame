@@ -12,6 +12,7 @@ TagManager:
   - PlayerModel
   - Pause
   - Note
+  - TimeControl
   layers:
   - Default
   - TransparentFX
