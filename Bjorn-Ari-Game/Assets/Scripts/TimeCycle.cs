@@ -5,15 +5,10 @@ using UnityEngine;
 using TMPro;
 public class TimeCycle : MonoBehaviour
 {
+    bool hasSpawed = false;
     List<GameObject> Enemy;
     private GameObject pauseObject;
     private PauseScreen pauseSystem;
-    public Vector3 origin1 = Vector3.zero;
-    public float radius1 = 10;
-    public Vector3 origin2 = Vector3.zero;
-    public float radius2 = 10;
-    public Vector3 origin3 = Vector3.zero;
-    public float radius3 = 10;
     [SerializeField]
     private GameObject enemy1;
     [SerializeField]
@@ -90,10 +85,37 @@ public class TimeCycle : MonoBehaviour
         { 
             timeText.text = currentTime.ToString("HH:mm");
         }
+        if((sunsetTime <= currentTime.TimeOfDay || currentTime.TimeOfDay <= sunriseTime) && !hasSpawed)
+        {
+            print(currentTime.TimeOfDay);
+            hasSpawed = true;
+            nightCount += 1;
+            create(1);
+            if(nightCount >= 3)
+            {
+                create(2);
+                if(nightCount >= 6)
+                {
+                    create(3);
+                }
+            }
+        }
         if(sunsetTime >= currentTime.TimeOfDay && currentTime.TimeOfDay >= sunriseTime)
         {
-
+            hasSpawed = false;
         }
+    }
+    public Vector3 RandomNavmeshLocation(float radius) 
+    {
+        Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * radius;
+        randomDirection += transform.position;
+        UnityEngine.AI.NavMeshHit hit;
+        Vector3 finalPosition = Vector3.zero;
+        if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out hit, radius, 1)) 
+        {
+            finalPosition = hit.position;            
+        }
+        return finalPosition;
     }
 
     private void RotateSun()
@@ -107,7 +129,7 @@ public class TimeCycle : MonoBehaviour
 
             double percentage = timeSinceSunrise.TotalMinutes / sunriseToSunsetDuration.TotalMinutes;
 
-            sunLightRotation = Mathf.Lerp(90, 270, (float)percentage);
+            sunLightRotation = Mathf.Lerp(0, 180, (float)percentage);
             if(!nightStart)
             {
                 
@@ -118,16 +140,6 @@ public class TimeCycle : MonoBehaviour
         {
             if(nightStart)
             {
-                nightCount += 1;
-                create(1);
-                if(nightCount >= 3)
-                {
-                    create(2);
-                    if(nightCount >= 6)
-                    {
-                        create(3);
-                    }
-                }
                 nightStart = false;
             }
             TimeSpan sunsetToSunriseDuration = CalculateTimeDifference(sunsetTime, sunriseTime);
@@ -135,7 +147,7 @@ public class TimeCycle : MonoBehaviour
 
              double percentage = timeSinceSunset.TotalMinutes / sunsetToSunriseDuration.TotalMinutes;
 
-             sunLightRotation = Mathf.Lerp(-90, 90, (float)percentage);
+             sunLightRotation = Mathf.Lerp(-180, 0, (float)percentage);
         }
         sunLight.transform.rotation = Quaternion.AngleAxis(sunLightRotation, Vector3.right);
     }
@@ -169,6 +181,6 @@ public class TimeCycle : MonoBehaviour
     void create(int number)
     {
         // randomInt = Random.Range(0, enemy.Length);
-        Instantiate(enemy1, GeneratedPosition(), Quaternion.identity);
+        Instantiate(enemy1, RandomNavmeshLocation(15), Quaternion.identity);
     }
 }

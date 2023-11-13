@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 {
+    private Animator animator;
     private GameObject pauseObject;
     private PauseScreen pauseSystem; 
     public GameObject thc6;
@@ -26,6 +27,9 @@ public class AI : MonoBehaviour
     private NavMeshAgent[] navAgents;
     private NavMeshAgent agent;
     private TimeCycle time;
+    public bool moving;
+    public bool hunting;
+    public bool idle;
     void Awake()
     {
         GameObject TimeObject = GameObject.FindGameObjectWithTag("TimeControl");
@@ -54,13 +58,41 @@ public class AI : MonoBehaviour
     {
         while(isPatroling)
         {
-            Vector3 Destination = RandomNavmeshLocation(Random.Range(20, 50))
+            agent.speed = 3;
+            Vector3 Destination = RandomNavmeshLocation(Random.Range(20, 50));
+            agent.destination = Destination;
             yield return new WaitForSeconds(Random.Range(15, 30));
         }
         
     }
     void Update()
     {
+        if(!(agent.velocity.x == 0 && agent.velocity.z == 0))
+        {
+            if(isPatroling)
+            {
+                moving = true;
+                hunting = false;
+                idle = false;
+            }
+            else if(playerFound)
+            {
+                moving = false;
+                hunting = true;
+                idle = false;
+            }
+        }
+        else if(agent.velocity.x == 0 && agent.velocity.z == 0)
+        {
+            moving = false;
+            hunting = false;
+            idle = true;
+        }
+        if(!agent.isOnNavMesh)
+        {
+            agent.enabled = false;
+            agent.enabled = true;
+        }
         if(time.sunsetTime >= time.currentTime.TimeOfDay &&  time.currentTime.TimeOfDay >= time.sunriseTime)
         {
             DestroyEnemy();
@@ -76,14 +108,6 @@ public class AI : MonoBehaviour
         // distanceY = delta.y;
         // distanceZ = delta.z;
         sonicDistance = delta.magnitude;
-        // if(Physics.SphereCast(playerScript, 1, transform.forward, out hit, 30))
-        // {
-        //     visonDistance = hit.distance;
-        // }
-        // else
-        // {
-        //     visonDistance = 40;
-        // }
         playerNoise = playerScript.noise();
         print("sound is " +playerNoise);
         if(playerSeen)
@@ -126,6 +150,7 @@ public class AI : MonoBehaviour
         if(playerFound)
         {
             agent.destination = GameObject.FindWithTag("Player").transform.position;
+            agent.speed = 6;
             if(!foundSound)
             {
                 enemy.GetComponent<AudioSource>().Stop();

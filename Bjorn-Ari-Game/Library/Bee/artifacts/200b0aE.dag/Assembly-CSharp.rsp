@@ -445,6 +445,7 @@
 -analyzer:"Library/PackageCache/com.unity.netcode@1.0.17/Runtime/SourceGenerators/NetCodeSourceGenerator.dll"
 -analyzer:"Library/PackageCache/com.unity.transport@2.0.1/Analyzers/Unity.Transport.Analyzers.dll"
 "Assets/Scripts/AI.cs"
+"Assets/Scripts/AIAnimate.cs"
 "Assets/Scripts/AnimationPlayerScript.cs"
 "Assets/Scripts/camerafollowing.cs"
 "Assets/Scripts/detectObject.cs"

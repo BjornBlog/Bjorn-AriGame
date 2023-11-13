@@ -40,9 +40,11 @@ public class PickupDrop : MonoBehaviour
                     }
                     if(FoundObject.tag == "Battery")
                     {
-                        GameObject LightObj = GameObject.FindGameObjectWithTag("Light");
+                        print("Battery");
+                        GameObject LightObj = GameObject.FindGameObjectWithTag("FlashlightBulb");
                         LightScript Light = LightObj.GetComponent<LightScript>();
                         Light.batteryCount ++;
+                        Destroy(FoundObject);
                     }
                 }
             } 

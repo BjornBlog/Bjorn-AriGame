@@ -11,7 +11,6 @@ public class NoteScript : MonoBehaviour
     private PauseScreen pauseSystem; 
     [SerializeField] 
     GameObject noteCanv = null;
-    bool isReading = false;
     public string noteText = "TEST /* TEST";
     // Start is called before the first frame update
     void Awake()
