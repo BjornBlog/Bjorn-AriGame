@@ -867,171 +867,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
         type: 3}
-      propertyPath: enemy1
-      value: 
-      objectReference: {fileID: 4401459110104426971, guid: 7d12644498e5a44a9ae144486bd13350,
-        type: 3}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: enemy2
-      value: 
-      objectReference: {fileID: 4401459110104426971, guid: 7d12644498e5a44a9ae144486bd13350,
-        type: 3}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: enemy3
-      value: 
-      objectReference: {fileID: 4401459110104426971, guid: 7d12644498e5a44a9ae144486bd13350,
-        type: 3}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
       propertyPath: timeText
       value: 
       objectReference: {fileID: 9038673750666728044}
     - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
         type: 3}
-      propertyPath: origin1.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: origin2.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: origin3.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
       propertyPath: startHour
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: sunsetHour
-      value: 18.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: sunriseHour
-      value: 7
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
         type: 3}
       propertyPath: timeMultiplier
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: nightAmbientLight.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: nightAmbientLight.b
-      value: 0.23584908
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: nightAmbientLight.g
-      value: 0.0069367443
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: nightAmbientLight.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312675576433988497, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: maxMoonLightIntensity
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3153508943268266857, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 0.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3153508943268266857, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_BounceIntensity
-      value: 0.0002
-      objectReference: {fileID: 0}
-    - target: {fileID: 5957322381253654163, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_TagString
-      value: TimeControl
-      objectReference: {fileID: 0}
-    - target: {fileID: 8105728000027262626, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8105728000027262626, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8105728000027262626, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723222620390741290, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723222620390741290, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723222620390741290, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723222620390741290, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723222620390741290, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723222620390741290, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723222620390741290, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723222620390741290, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723222620390741290, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 8752542345386353829, guid: d128f47d9db8a45c9b4e923d7ea212ad,
         type: 3}
       propertyPath: m_Name
       value: Weather_cycle_time
-      objectReference: {fileID: 0}
-    - target: {fileID: 8752542345386353829, guid: d128f47d9db8a45c9b4e923d7ea212ad,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9076602628041640247, guid: d128f47d9db8a45c9b4e923d7ea212ad,
         type: 3}
@@ -2368,11 +2220,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7751347912812962985, guid: 86f3d71df042b441cb42f7fc83280181,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 8119205858470088278, guid: 86f3d71df042b441cb42f7fc83280181,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2381,11 +2228,6 @@ PrefabInstance:
     - target: {fileID: 8119205858470088278, guid: 86f3d71df042b441cb42f7fc83280181,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9217004382736735639, guid: 86f3d71df042b441cb42f7fc83280181,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

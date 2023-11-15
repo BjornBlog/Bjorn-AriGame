@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 {
+    private Rigidbody rb;
+    private bool PatrolStarted = false;
     private Animator animator;
     private GameObject pauseObject;
     private PauseScreen pauseSystem; 
@@ -27,9 +29,41 @@ public class AI : MonoBehaviour
     private NavMeshAgent[] navAgents;
     private NavMeshAgent agent;
     private TimeCycle time;
-    public bool moving;
-    public bool hunting;
-    public bool idle;
+    public bool moving = false;
+    public bool hunting = false;
+    public bool pathFinding = false;
+
+    private IEnumerator CheckMoving()
+    {
+        Vector3 startPos = transform.position;
+        yield return new WaitForSeconds(0.2f);
+        Vector3 finalPos = transform.position;
+        if( startPos.x != finalPos.x || startPos.y != finalPos.y || startPos.z != finalPos.z)
+        {
+            pathFinding = true;
+        }
+        if(pathFinding)
+        {
+            if(playerFound)
+            {
+                print("IsHunting");
+                moving = false;
+                hunting = true;
+            }
+            else if(isPatroling)
+            {
+                print("IsPatroling");
+                moving = true;
+                hunting = false;
+            }
+        }
+        else
+        {
+            moving = false;
+            hunting = false;
+        }
+
+    }
     void Awake()
     {
         GameObject TimeObject = GameObject.FindGameObjectWithTag("TimeControl");
@@ -41,6 +75,7 @@ public class AI : MonoBehaviour
     {
         playerScript = player1.GetComponent<FirstPersonController>();
         StartCoroutine(Screach());
+        StartCoroutine(CheckMoving());
         agent = GetComponent<NavMeshAgent>();
     }
     private IEnumerator Screach()
@@ -54,12 +89,20 @@ public class AI : MonoBehaviour
         }
         isPatroling = false;
     }
+    private IEnumerator PatrolStart()
+    {
+        yield return new WaitForSeconds(Random.Range(15, 30));
+        foundSound = false;
+        isPatroling = true;
+        StartCoroutine(Patrol());
+    }
     private IEnumerator Patrol()
     {
+        print("Patrol");
         while(isPatroling)
         {
-            agent.speed = 3;
-            Vector3 Destination = RandomNavmeshLocation(Random.Range(20, 50));
+            agent.speed = 3;           
+            Vector3 Destination = RandomNavmeshLocation(50);
             agent.destination = Destination;
             yield return new WaitForSeconds(Random.Range(15, 30));
         }
@@ -67,27 +110,6 @@ public class AI : MonoBehaviour
     }
     void Update()
     {
-        if(!(agent.velocity.x == 0 && agent.velocity.z == 0))
-        {
-            if(isPatroling)
-            {
-                moving = true;
-                hunting = false;
-                idle = false;
-            }
-            else if(playerFound)
-            {
-                moving = false;
-                hunting = true;
-                idle = false;
-            }
-        }
-        else if(agent.velocity.x == 0 && agent.velocity.z == 0)
-        {
-            moving = false;
-            hunting = false;
-            idle = true;
-        }
         if(!agent.isOnNavMesh)
         {
             agent.enabled = false;
@@ -151,6 +173,8 @@ public class AI : MonoBehaviour
         {
             agent.destination = GameObject.FindWithTag("Player").transform.position;
             agent.speed = 6;
+            print("hunting");
+            isPatroling = false;
             if(!foundSound)
             {
                 enemy.GetComponent<AudioSource>().Stop();
@@ -160,12 +184,11 @@ public class AI : MonoBehaviour
         }
         else
         {
-            if(!isPatroling)
+            if(!PatrolStarted)
             {
-                StartCoroutine(Patrol());
-                StartCoroutine(Screach());
-                isPatroling = true;
-                foundSound = false;
+                StartCoroutine(PatrolStart());
+                StartCoroutine(Screach());    
+                PatrolStarted = true;
             }
         }
         playerFound = false;
@@ -202,5 +225,15 @@ public class AI : MonoBehaviour
     public void DestroyEnemy()
     {
         Destroy(enemy);
+    }
+    public bool Moving()
+    {
+        print("check moving");
+        return moving;
+    }
+    public bool Hunting()
+    {
+        print("check hunting");
+        return hunting;
     }
 }

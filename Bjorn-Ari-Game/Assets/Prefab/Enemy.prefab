@@ -1934,9 +1934,10 @@ GameObject:
   - component: {fileID: 7642170806112852321}
   - component: {fileID: 6334223449496208002}
   - component: {fileID: 8042746821095663011}
+  - component: {fileID: 1511867311827497574}
   m_Layer: 0
   m_Name: arach_armature
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1966,7 +1967,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5145999871053939255}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 1c345d5c2a9b820439fe3bd81aa11b09, type: 3}
+  m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 73656d61198e95244887bfb747b30016, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -1992,6 +1993,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRoot: {fileID: 4401459110104426971}
+--- !u!136 &1511867311827497574
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5145999871053939255}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.2736862
+  m_Height: 4.9090853
+  m_Direction: 2
+  m_Center: {x: 0, y: -0.573687, z: 1.1400121}
 --- !u!1 &5286782618728672221
 GameObject:
   m_ObjectHideFlags: 0

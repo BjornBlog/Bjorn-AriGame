@@ -152,7 +152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7137614096911589217
 RectTransform:
   m_ObjectHideFlags: 0
@@ -255,7 +255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1808163359485980614
 RectTransform:
   m_ObjectHideFlags: 0
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db4f18dc6f92e45fc8f6a399d4b53aa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  note: 0
+  note: 1
   noteObj: {fileID: 0}
   pauseMenu: {fileID: 1670897490164324019}
   noteCanv: {fileID: 1579486868876081826}
