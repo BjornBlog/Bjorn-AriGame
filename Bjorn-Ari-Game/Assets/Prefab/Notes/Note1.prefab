@@ -148,10 +148,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NoteTMP: {fileID: 0}
   noteCanv: {fileID: 0}
-  noteText: "Entry 1: <br> Date: 10/13/20XX  <br>  It\u2019s been a day since we
-    arrived at this godforsaken forest. The silence here is suffocating. The trees
-    loom overhead like skeletal giants, their branches reaching out as if trying
-    to grab anyone who dares to pass. The air is thick, and the fog refuses to lift,
-    making it impossible to see more than a few feet ahead. We were told this place
-    was abandoned, but something doesn\u2019t feel right. I can\u2019t shake the
-    feeling that we\u2019re being watched. "
+  noteText: "Entry 1: <br>Date: 10/13/2027  <br>It\u2019s been a day since we arrived
+    at this godforsaken forest. The silence here is suffocating. The trees loom overhead
+    like skeletal giants, their branches reaching out as if trying to grab anyone
+    who dares to pass. The air is thick, and the fog refuses to lift, making it impossible
+    to see more than a few feet ahead. We were told this place was abandoned, but
+    something doesn\u2019t feel right. I can\u2019t shake the feeling that we\u2019re
+    being watched. "

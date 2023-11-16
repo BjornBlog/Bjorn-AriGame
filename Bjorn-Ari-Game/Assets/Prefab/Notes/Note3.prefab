@@ -148,8 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NoteTMP: {fileID: 0}
   noteCanv: {fileID: 0}
-  noteText: "Entry 3: <br> Date: 10/15/20XX <br> One of the team members, Sarah,
-    has gone missing. We woke up this morning, and she was nowhere to be found. There
+  noteText: "Entry 3: <br>Date: 10/15/2027 <br>One of the team members, Sarah, has
+    gone missing. We woke up this morning, and she was nowhere to be found. There
     was no sign of struggle, no trace of where she might have gone. We\u2019ve searched
     everywhere, calling out her name, but the only response we get is the echo of
     our own voices. It feels like the forest is playing tricks on us, distorting

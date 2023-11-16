@@ -1385,6 +1385,7 @@ GameObject:
   - component: {fileID: 611162338498704894}
   - component: {fileID: 8177009610284422707}
   - component: {fileID: 4449438642347622084}
+  - component: {fileID: 5057903688921649066}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1418,12 +1419,12 @@ NavMeshAgent:
   m_GameObject: {fileID: 4401459110104426971}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 1.1
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 0.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1445,14 +1446,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thc6: {fileID: 6668945231542535731}
   maxViewRange: 40
-  player1: {fileID: 4062153026457050081, guid: 76722f5e2ae5d4e00bdd69278ef36254, type: 3}
+  player1: {fileID: 0}
   enemy: {fileID: 4401459110104426971}
   playerSeen: 0
   sonicDistance: 200
   playerFound: 0
   moving: 0
   hunting: 0
-  idle: 0
+  pathFinding: 0
 --- !u!136 &611162338498704894
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1599,6 +1600,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!95 &5057903688921649066
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4401459110104426971}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 1c345d5c2a9b820439fe3bd81aa11b09, type: 3}
+  m_Controller: {fileID: 9100000, guid: 73656d61198e95244887bfb747b30016, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4438192715137167982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,9 +1955,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7642170806112852321}
-  - component: {fileID: 6334223449496208002}
-  - component: {fileID: 8042746821095663011}
   - component: {fileID: 1511867311827497574}
+  - component: {fileID: 8742592425607996954}
   m_Layer: 0
   m_Name: arach_armature
   m_TagString: Enemy
@@ -1958,41 +1980,6 @@ Transform:
   - {fileID: 398269347563672220}
   m_Father: {fileID: 2496827886430322175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6334223449496208002
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5145999871053939255}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 73656d61198e95244887bfb747b30016, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8042746821095663011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5145999871053939255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4edc0977ac2c4c0aabf64174a80a1e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyRoot: {fileID: 4401459110104426971}
 --- !u!136 &1511867311827497574
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2016,6 +2003,19 @@ CapsuleCollider:
   m_Height: 4.9090853
   m_Direction: 2
   m_Center: {x: 0, y: -0.573687, z: 1.1400121}
+--- !u!114 &8742592425607996954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5145999871053939255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4edc0977ac2c4c0aabf64174a80a1e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyRoot: {fileID: 4401459110104426971}
 --- !u!1 &5286782618728672221
 GameObject:
   m_ObjectHideFlags: 0

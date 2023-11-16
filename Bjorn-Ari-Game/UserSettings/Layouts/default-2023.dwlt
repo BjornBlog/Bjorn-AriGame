@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1014
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 5145
+  controlID: 10271
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 5146
+  controlID: 10272
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 5147
+  controlID: 10273
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,8 +299,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 386.5
-    y: 19
+    x: 385.5
+    y: 83
     width: 1176
     height: 535
   m_SerializedDataModeController:
@@ -418,9 +418,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 1a40ffff
       m_LastClickedID: 0
-      m_ExpandedIDs: b4f8ffffe8faffff
+      m_ExpandedIDs: 22f8ffff1ef9ffff2af9ffff38f9ffff5af9ffff5ef9ffffb0faffffdcfaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -485,6 +485,7 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: -6527255924247695704, guid: f8d1353624d924b64a85d9b0f32b73bf, type: 2}
     - {fileID: -8010478607836456653, guid: 73656d61198e95244887bfb747b30016, type: 2}
+    - {fileID: 4701160819987654953, guid: 73656d61198e95244887bfb747b30016, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.6911215
       e01: 0
@@ -502,14 +503,30 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.611157
+    - e00: 0.7950643
       e01: 0
       e02: 0
-      e03: 143.34299
+      e03: 152.44427
       e10: 0
-      e11: 0.611157
+      e11: 0.7950643
       e12: 0
-      e13: 226.9194
+      e13: 221.75417
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 48.75
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 206
       e20: 0
       e21: 0
       e22: 1
@@ -523,6 +540,9 @@ MonoBehaviour:
     type: 2}
   m_BreadCrumbs:
   - m_Target: {fileID: -8010478607836456653, guid: 73656d61198e95244887bfb747b30016,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  - m_Target: {fileID: 4701160819987654953, guid: 73656d61198e95244887bfb747b30016,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -1013,9 +1033,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -46.388477, y: 1, z: 3.232661}
+    m_Target: {x: -41.03294, y: 7.8287163, z: 3.1356757}
     speed: 2
-    m_Value: {x: -46.388477, y: 1, z: 3.232661}
+    m_Value: {x: -41.03294, y: 7.8287163, z: 3.1356757}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1061,13 +1081,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.018950278, y: 0.9553721, z: -0.28802088, w: -0.062857226}
+    m_Target: {x: 0.24542622, y: 0.5634896, z: -0.18007264, w: 0.7679984}
     speed: 2
-    m_Value: {x: -0.018950278, y: 0.9553721, z: -0.28802088, w: -0.062857226}
+    m_Value: {x: 0.24542622, y: 0.5634896, z: -0.18007264, w: 0.76799834}
   m_Size:
-    m_Target: 5.1751156
+    m_Target: 1.1438267
     speed: 2
-    m_Value: 5.1751156
+    m_Value: 1.2676173
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1140,7 +1160,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefab
+    - Assets/Assets/True_Horror_Creatures/Horror_creature6_v1.0
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1150,16 +1170,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefab
+  - Assets/Assets/True_Horror_Creatures/Horror_creature6_v1.0
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/broberts25/Desktop/Bjorn-Ari-Game/Bjorn-AriGame/Bjorn-Ari-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: eaa80000
-    m_LastClickedID: 43242
-    m_ExpandedIDs: 00000000e6950000e8950000ea950000ec95000000ca9a3b
+    m_SelectedIDs: d6c50000
+    m_LastClickedID: 50646
+    m_ExpandedIDs: 00000000e8950000ea950000ec950000ee95000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1187,7 +1207,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e6950000e8950000ea950000ec95000000ca9a3b
+    m_ExpandedIDs: 00000000e8950000ea950000ec950000ee95000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1212,10 +1232,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300008c8f000074bb0000000000002ea800001a920000a4970000
+    m_SelectedInstanceIDs: 1a40ffff
+    m_LastClickedInstanceID: -49126
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300008c8f000074bb0000000000002ea800001a920000a49700005a980000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

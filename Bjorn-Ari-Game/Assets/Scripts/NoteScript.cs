@@ -5,18 +5,18 @@ using UnityEngine;
 using TMPro;
 public class NoteScript : MonoBehaviour
 {
-    [SerializeField] 
-    private TextMeshProUGUI NoteTMP;
+    private TMP_Text NoteTMP;
     private GameObject pauseObject;
     private PauseScreen pauseSystem; 
-    [SerializeField] 
-    GameObject noteCanv = null;
+    private GameObject noteCanv = null;
     public string noteText = "TEST /* TEST";
     // Start is called before the first frame update
     void Awake()
     {
+        noteCanv = GameObject.Find("NoteScreen");
+        NoteTMP =  GameObject.Find("NoteText").GetComponent<TMP_Text>();
         noteCanv.SetActive(false);
-        pauseObject = GameObject.FindGameObjectWithTag ("Pause");
+        pauseObject = GameObject.FindGameObjectWithTag("Pause");
         pauseSystem = pauseObject.GetComponent<PauseScreen>();
     }
     void Start()

@@ -32,38 +32,6 @@ public class AI : MonoBehaviour
     public bool moving = false;
     public bool hunting = false;
     public bool pathFinding = false;
-
-    private IEnumerator CheckMoving()
-    {
-        Vector3 startPos = transform.position;
-        yield return new WaitForSeconds(0.2f);
-        Vector3 finalPos = transform.position;
-        if( startPos.x != finalPos.x || startPos.y != finalPos.y || startPos.z != finalPos.z)
-        {
-            pathFinding = true;
-        }
-        if(pathFinding)
-        {
-            if(playerFound)
-            {
-                print("IsHunting");
-                moving = false;
-                hunting = true;
-            }
-            else if(isPatroling)
-            {
-                print("IsPatroling");
-                moving = true;
-                hunting = false;
-            }
-        }
-        else
-        {
-            moving = false;
-            hunting = false;
-        }
-
-    }
     void Awake()
     {
         GameObject TimeObject = GameObject.FindGameObjectWithTag("TimeControl");
@@ -73,9 +41,9 @@ public class AI : MonoBehaviour
     }
     void Start()
     {
-        playerScript = player1.GetComponent<FirstPersonController>();
+        
         StartCoroutine(Screach());
-        StartCoroutine(CheckMoving());
+        StartCoroutine(Patrol());
         agent = GetComponent<NavMeshAgent>();
     }
     private IEnumerator Screach()
@@ -93,11 +61,11 @@ public class AI : MonoBehaviour
     {
         yield return new WaitForSeconds(Random.Range(15, 30));
         foundSound = false;
-        isPatroling = true;
         StartCoroutine(Patrol());
     }
     private IEnumerator Patrol()
     {
+        isPatroling = true;
         print("Patrol");
         while(isPatroling)
         {
@@ -123,15 +91,28 @@ public class AI : MonoBehaviour
         { 
             return; 
         }
-        //int layerMask = 1 << 8;
-        Vector3 p1 = transform.position;
-        Vector3 delta = enemy.transform.position - player1.transform.position;
-        // distanceX = delta.x;
-        // distanceY = delta.y;
-        // distanceZ = delta.z;
-        sonicDistance = delta.magnitude;
-        playerNoise = playerScript.noise();
-        print("sound is " +playerNoise);
+        if(player1 != null)
+        {
+            if(playerScript == null)
+            {
+                playerScript = player1.GetComponent<FirstPersonController>();
+            }
+            //int layerMask = 1 << 8;
+            Vector3 p1 = transform.position;
+            Vector3 delta = enemy.transform.position - player1.transform.position;
+            // distanceX = delta.x;
+            // distanceY = delta.y;
+            // distanceZ = delta.z;
+            sonicDistance = delta.magnitude;
+            playerNoise = playerScript.noise();
+            print("sound is " +playerNoise);
+        }
+        else
+        {
+            player1 = GameObject.FindGameObjectWithTag("Player");
+            sonicDistance = 400;
+            print("No Player");
+        }
         if(playerSeen)
         {
             float pdX = player1.transform.position.x - enemy.transform.position.x;
